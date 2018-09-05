@@ -6,12 +6,18 @@ import android.os.Handler
 import android.os.Message
 import android.support.v7.widget.GridLayoutManager
 import android.support.v7.widget.RecyclerView
+import android.text.TextUtils
 import android.view.View
 import android.widget.Button
+import com.example.mylock.DynamicLock.Prize.GamePrizeDialog
+import com.qy.zgz.mall.Model.MemberInfo
+import com.qy.zgz.mall.MyApplication
 import com.qy.zgz.mall.R
 import com.qy.zgz.mall.base.BaseReadCardActivity
 import com.qy.zgz.mall.network.Constance
+import com.qy.zgz.mall.utils.GsonUtil
 import com.qy.zgz.mall.utils.SharePerferenceUtil
+import com.qy.zgz.mall.widget.TisDialog
 import com.zhy.autolayout.utils.AutoUtils
 import org.xutils.view.annotation.ContentView
 import org.xutils.view.annotation.ViewInject
@@ -64,13 +70,20 @@ class NumDanceActivity : BaseReadCardActivity() {
     override fun onClick(v: View) {
         when (v!!.id) {
             R.id.btn_start -> {
-                if (rntv.isRunning) {
-                    rntv.stop()
-                    btn_start.text = "开始"
-                } else {
-                    rntv.start()
-                    btn_start.text = "停止"
-                }
+//                if (isAbleStart()) {
+                    if(MyApplication.getInstance().mIsConnectBox) {
+                        if (rntv.isRunning) {
+                            rntv.stop()
+                            btn_start.text = "开始"
+                        } else {
+                            rntv.start()
+                            btn_start.text = "停止"
+                            cancelExit()
+                        }
+                    }else {
+                        TisDialog(this).create().setMessage("柜子未连接").show()
+                    }
+//                }
             }
 
             R.id.btn_game_exit -> {
@@ -92,9 +105,20 @@ class NumDanceActivity : BaseReadCardActivity() {
             btn_start.text = "开始"
 //            game_prize_adapter!!.isShowSelect=false
 //            game_prize_adapter!!.notifyDataSetChanged()
+            var sel_pos = game_prize_adapter!!.getLastSelect()
+            var row = sel_pos / 4 + 1//行数
+            var col = sel_pos % 4 + 1//列数
 
+            GamePrizeDialog(this).create()
+                    .setMessage("第" + row + "行第" + col + "个柜子已开门...")
+                    .setHandEventAfterDismiss(object : GamePrizeDialog.HandEventAfterDismiss {
+                        override fun handEvent() {
+                            startExit(45000)
+                        }
+                    })
+                    .show()
 
-            openDoor(culDoor(game_prize_adapter!!.getLastSelect()))
+            openDoor(culDoor(sel_pos))
         }
         rntv.setOnTimeTick {
             game_prize_adapter!!.apply {
@@ -115,6 +139,9 @@ class NumDanceActivity : BaseReadCardActivity() {
         rntv.postDelayed(Runnable {
             ID()
         }, 500)
+
+
+        startExit(45000)
     }
 
 
@@ -210,6 +237,25 @@ class NumDanceActivity : BaseReadCardActivity() {
 
     }
 
+    /**
+     * 是否可以开始游戏
+     */
+    private fun isAbleStart(): Boolean {
+        val memberInfo = GsonUtil.jsonToObject(SharePerferenceUtil.getInstance()
+                .getValue(Constance.member_Info, "")!!.toString(), MemberInfo::class.java)
+
+        if (null == memberInfo) {
+            TisDialog(this).create().setMessage("请登录").show()
+            return false
+        } else if (TextUtils.isEmpty(SharePerferenceUtil.getInstance()
+                        .getValue(Constance.user_accessToken, "")!!.toString())) {
+            TisDialog(this).create().setMessage("请关注公众号绑卡或到前台添加手机号码,再重新登录!").show()
+            return false
+        } else {
+            return true
+        }
+
+    }
 
 
 }

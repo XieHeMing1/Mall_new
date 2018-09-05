@@ -91,7 +91,7 @@ public class ShoppingCartBottomFragment extends BottomSheetDialogFragment {
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.fragment_shopping_cart, container, false);
+        View view = inflater.inflate(R.layout.fragment_shop_car, container, false);
         mUnbinder = ButterKnife.bind(this, view);
         mIvCheckAll.setSelected(false);
         return view;

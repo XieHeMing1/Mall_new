@@ -51,6 +51,6 @@
         android:layout_marginTop="50px"
         android:background="@drawable/bg_dialog_game_git"
         android:padding="50px"
-        android:src="@color/color_white" />
+        android:src="@drawable/nd_prize" />
 
 </com.zhy.autolayout.AutoRelativeLayout>

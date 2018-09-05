@@ -424,8 +424,7 @@ public class HomePageActivity extends BaseActivity {
     private void showLoginInfo() {
         if (TextUtils.isEmpty(SharePerferenceUtil.getInstance()
                 .getValue(Constance.member_Info, "").toString())) {
-
-            countDownTimer.cancel();
+                countDownTimer.cancel();
             //未登录状态
             mTvLoginPlease.setVisibility(View.GONE);
             mTvVipName.setVisibility(View.INVISIBLE);

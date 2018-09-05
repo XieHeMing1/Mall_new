@@ -36,6 +36,20 @@
         android:layout_marginTop="100px"
         android:background="@drawable/ic_login_guide">
 
+        <ProgressBar
+            android:id="@+id/pb_loading"
+            android:layout_width="350px"
+            android:layout_height="350px"
+            android:layout_marginLeft="1550px"
+            android:layout_marginTop="550px"/>
+
+        <TextView
+            android:id="@+id/tv_net_error"
+            android:layout_width="600px"
+            android:layout_height="350px"
+            android:layout_marginLeft="1550px"
+            android:layout_marginTop="550px"/>
+
         <ImageView
             android:id="@+id/iv_menber_center_qrcode"
             android:layout_width="600px"
@@ -51,6 +65,7 @@
             android:layout_marginLeft="1425px"
             android:layout_marginTop="1000px"
             android:clickable="true"
+            android:visibility="gone"
             android:src="@drawable/refresh" />
 
     </com.zhy.autolayout.AutoRelativeLayout>

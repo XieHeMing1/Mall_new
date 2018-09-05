@@ -8,6 +8,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
+import android.widget.ProgressBar;
 
 import com.google.gson.JsonObject;
 import com.qy.zgz.mall.BaseFragment;
@@ -35,6 +36,8 @@ public class VipCenterFragment extends BaseFragment {
     ImageView mIvQRCode;
     @BindView(R.id.iv_menber_center_refresh_qrcode)
     ImageView mIvRefresh;
+    @BindView(R.id.pb_loading)
+    ProgressBar mPbLoading;
 
     VIPCenterActivity mActivity;
     String mStrQRCode;
@@ -87,6 +90,8 @@ public class VipCenterFragment extends BaseFragment {
                     Log.i("VIPFragment", "CreateScanCode result = " + result);
                     mStrQRCode = jsonResult.get("Data").getAsString();
                     if(!TextUtils.isEmpty(mStrQRCode)) {
+                        mPbLoading.setVisibility(View.GONE);
+                        mIvRefresh.setVisibility(View.VISIBLE);
                         try {
                             mIvQRCode.setImageBitmap(QRBitmapUtils.createQRCode(mStrQRCode, 450));
                         } catch (Exception e) {

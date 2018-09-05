@@ -41,6 +41,9 @@ public class SerialPortCommunication {
      */
     public boolean send(byte[] buf){
         try {
+            if(mOutputStream == null || buf == null) {
+               return false;
+            }
             mOutputStream.write(buf);
             return true;
         } catch (IOException e) {

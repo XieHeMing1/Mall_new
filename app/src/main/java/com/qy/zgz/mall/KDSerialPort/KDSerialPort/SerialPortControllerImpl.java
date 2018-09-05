@@ -852,7 +852,9 @@ private boolean isReceiveCmd=false;
                     } catch (Exception e) {
                         e.printStackTrace();
                     }
-                    bean.serialPortManager.sendBytes(bean.bytes);
+                    if(bean.bytes != null) {
+                        bean.serialPortManager.sendBytes(bean.bytes);
+                    }
                     break;
                 }
             }
