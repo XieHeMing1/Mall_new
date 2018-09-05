@@ -1,0 +1,48 @@
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:orientation="vertical"
+             tools:context="com.qy.zgz.mall.page.fragment.BalanceGoodsDetailFragment">
+
+    <!--标题-->
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/coloer_wither"
+        android:paddingTop="50px"
+        android:paddingBottom="50px"
+        android:paddingLeft="30px"
+        android:paddingRight="30px"
+        >
+
+        <ImageView
+            android:id="@+id/iv_balance_goodsdetail_back"
+            android:layout_width="80px"
+            android:layout_height="80px"
+            android:textColor="@color/color_black"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/back"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="70px"
+            android:textColor="@color/color_green"
+            android:layout_centerInParent="true"
+            android:text="商品详情"
+            />
+
+
+
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_balance_goodsdetail_info"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+
+</com.zhy.autolayout.AutoLinearLayout>

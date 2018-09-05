@@ -1,0 +1,476 @@
+<com.zhy.autolayout.AutoLinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:orientation="vertical"
+             tools:context="com.qy.zgz.mall.page.money_purchase.error_handle.ChangeShiftsFragment">
+
+    <!--fragment标题-->
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_marginLeft="50px"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="100px"
+            android:text="交班"
+            android:textColor="@color/color_black"
+            android:lines="1"/>
+
+    </com.zhy.autolayout.AutoLinearLayout>
+
+    <TextView
+        android:id="@+id/tv_change_shifts_classtime"
+        android:layout_marginLeft="100px"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="60px"
+        android:text=""
+        android:layout_gravity="center_horizontal"
+        android:textColor="@color/color_blue"
+        android:lines="1"/>
+
+    <TextView
+        android:layout_marginTop="20px"
+        android:id="@+id/tv_change_shifts_jbtime"
+        android:layout_marginLeft="100px"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="60px"
+        android:text=""
+        android:layout_gravity="center_horizontal"
+        android:textColor="@color/color_blue"
+        android:lines="1"/>
+
+    <TextView
+        android:layout_marginTop="20px"
+        android:id="@+id/tv_change_shifts_state"
+        android:layout_marginLeft="100px"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="60px"
+        android:text="正在同步订单状态，请稍后..."
+        android:layout_gravity="center_horizontal"
+        android:textColor="@color/color_black"
+        android:lines="1"/>
+
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_marginLeft="100px"
+        android:layout_marginRight="100px"
+        android:layout_marginTop="100px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <!--left-->
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_marginRight="150px"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <!--描述-->
+            <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="100px"
+                    android:textSize="60px"
+                    android:text="初始币数："
+                    android:lines="1"
+                    android:ellipsize="end"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/color_black"/>
+
+                <TextView
+                    android:layout_marginTop="100px"
+                    android:layout_width="wrap_content"
+                    android:layout_height="100px"
+                    android:textSize="60px"
+                    android:text="结算币数："
+                    android:lines="1"
+                    android:ellipsize="end"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/color_black"/>
+
+                <TextView
+                    android:layout_marginTop="100px"
+                    android:layout_width="wrap_content"
+                    android:layout_height="100px"
+                    android:textSize="60px"
+                    android:text="盘点币数："
+                    android:lines="1"
+                    android:ellipsize="end"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/color_black"/>
+
+                <TextView
+                    android:layout_marginTop="200px"
+                    android:layout_width="wrap_content"
+                    android:layout_height="100px"
+                    android:textSize="60px"
+                    android:text="销售现金："
+                    android:lines="1"
+                    android:ellipsize="end"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/color_black"/>
+
+
+                <TextView
+                    android:layout_marginTop="100px"
+                    android:layout_width="wrap_content"
+                    android:layout_height="100px"
+                    android:textSize="60px"
+                    android:text="金额差异："
+                    android:lines="1"
+                    android:ellipsize="end"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/color_black"/>
+
+
+                <TextView
+                    android:layout_marginTop="100px"
+                    android:layout_width="wrap_content"
+                    android:layout_height="100px"
+                    android:textSize="60px"
+                    android:text="实收微支付："
+                    android:lines="1"
+                    android:ellipsize="end"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/color_black"/>
+
+
+
+        </com.zhy.autolayout.AutoLinearLayout>
+
+            <!--值-->
+            <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/tv_change_shifts_first_coin"
+                android:layout_marginLeft="100px"
+                android:layout_width="400px"
+                android:layout_height="100px"
+                android:textSize="60px"
+                android:text=""
+                android:gravity="center"
+                android:lines="1"
+                android:ellipsize="end"
+                android:textColor="@color/color_black"
+                android:background="@drawable/share_white"/>
+
+                <TextView
+                    android:id="@+id/tv_change_shifts_balance_coin"
+                    android:layout_marginLeft="100px"
+                    android:layout_marginTop="100px"
+                    android:layout_width="400px"
+                    android:layout_height="100px"
+                    android:textSize="60px"
+                    android:text=""
+                    android:gravity="center"
+                    android:lines="1"
+                    android:ellipsize="end"
+                    android:textColor="@color/color_black"
+                    android:background="@drawable/share_white"/>
+
+                <TextView
+                    android:id="@+id/tv_change_shifts_check_coin"
+                    android:layout_marginLeft="100px"
+                    android:layout_marginTop="100px"
+                    android:layout_width="400px"
+                    android:layout_height="100px"
+                    android:textSize="60px"
+                    android:text=""
+                    android:gravity="center"
+                    android:lines="1"
+                    android:ellipsize="end"
+                    android:textColor="@color/color_black"
+                    android:background="@drawable/share_white"/>
+
+                <TextView
+                    android:id="@+id/tv_change_shifts_sale_amount"
+                    android:layout_marginLeft="100px"
+                    android:layout_marginTop="200px"
+                    android:layout_width="400px"
+                    android:layout_height="100px"
+                    android:textSize="60px"
+                    android:text=""
+                    android:gravity="center"
+                    android:lines="1"
+                    android:ellipsize="end"
+                    android:textColor="@color/color_black"
+                    android:background="@drawable/share_white"/>
+
+                <TextView
+                    android:id="@+id/tv_change_shifts_amount_diff"
+                    android:layout_marginLeft="100px"
+                    android:layout_marginTop="100px"
+                    android:layout_width="400px"
+                    android:layout_height="100px"
+                    android:textSize="60px"
+                    android:text=""
+                    android:gravity="center"
+                    android:lines="1"
+                    android:ellipsize="end"
+                    android:textColor="@color/color_black"
+                    android:background="@drawable/share_white"/>
+
+
+                <TextView
+                    android:id="@+id/tv_change_shifts_wx_amount"
+                    android:layout_marginLeft="100px"
+                    android:layout_marginTop="100px"
+                    android:layout_width="400px"
+                    android:layout_height="100px"
+                    android:textSize="60px"
+                    android:text=""
+                    android:gravity="center"
+                    android:lines="1"
+                    android:ellipsize="end"
+                    android:textColor="@color/color_black"
+                    android:background="@drawable/share_white"/>
+
+
+
+
+        </com.zhy.autolayout.AutoLinearLayout>
+
+        </com.zhy.autolayout.AutoLinearLayout>
+
+
+        <!--right-->
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_marginLeft="150px"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <!--描述-->
+            <com.zhy.autolayout.AutoLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="100px"
+                    android:textSize="60px"
+                    android:text="加币数："
+                    android:lines="1"
+                    android:ellipsize="end"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/color_black"/>
+
+                <TextView
+                    android:layout_marginTop="100px"
+                    android:layout_width="wrap_content"
+                    android:layout_height="100px"
+                    android:textSize="60px"
+                    android:text="出币数："
+                    android:lines="1"
+                    android:ellipsize="end"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/color_black"/>
+
+                <TextView
+                    android:layout_marginTop="100px"
+                    android:layout_width="wrap_content"
+                    android:layout_height="100px"
+                    android:textSize="60px"
+                    android:text="差异币数："
+                    android:lines="1"
+                    android:ellipsize="end"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/color_black"/>
+
+                <TextView
+                    android:layout_marginTop="200px"
+                    android:layout_width="wrap_content"
+                    android:layout_height="100px"
+                    android:textSize="60px"
+                    android:text="实收现金："
+                    android:lines="1"
+                    android:ellipsize="end"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/color_black"/>
+
+
+                <TextView
+                    android:layout_marginTop="100px"
+                    android:layout_width="wrap_content"
+                    android:layout_height="100px"
+                    android:textSize="60px"
+                    android:text="实收预存款："
+                    android:lines="1"
+                    android:ellipsize="end"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/color_black"/>
+
+
+                <TextView
+                    android:layout_marginTop="100px"
+                    android:layout_width="wrap_content"
+                    android:layout_height="100px"
+                    android:textSize="60px"
+                    android:text="实收支付宝："
+                    android:lines="1"
+                    android:ellipsize="end"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/color_black"/>
+
+
+
+            </com.zhy.autolayout.AutoLinearLayout>
+
+            <!--值-->
+            <com.zhy.autolayout.AutoLinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:id="@+id/tv_change_shifts_add_coin"
+                    android:layout_marginLeft="100px"
+                    android:layout_width="400px"
+                    android:layout_height="100px"
+                    android:textSize="60px"
+                    android:text=""
+                    android:gravity="center"
+                    android:lines="1"
+                    android:ellipsize="end"
+                    android:textColor="@color/color_black"
+                    android:background="@drawable/share_white"/>
+
+                <TextView
+                    android:id="@+id/tv_change_shifts_out_coin"
+                    android:layout_marginLeft="100px"
+                    android:layout_marginTop="100px"
+                    android:layout_width="400px"
+                    android:layout_height="100px"
+                    android:textSize="60px"
+                    android:text=""
+                    android:gravity="center"
+                    android:lines="1"
+                    android:ellipsize="end"
+                    android:textColor="@color/color_black"
+                    android:background="@drawable/share_white"/>
+
+                <TextView
+                    android:id="@+id/tv_change_shifts_coin_diff"
+                    android:layout_marginLeft="100px"
+                    android:layout_marginTop="100px"
+                    android:layout_width="400px"
+                    android:layout_height="100px"
+                    android:textSize="60px"
+                    android:text=""
+                    android:gravity="center"
+                    android:lines="1"
+                    android:ellipsize="end"
+                    android:textColor="@color/color_black"
+                    android:background="@drawable/share_white"/>
+
+                <TextView
+                    android:id="@+id/tv_change_shifts_fast_cash"
+                    android:layout_marginLeft="100px"
+                    android:layout_marginTop="200px"
+                    android:layout_width="400px"
+                    android:layout_height="100px"
+                    android:textSize="60px"
+                    android:text=""
+                    android:gravity="center"
+                    android:lines="1"
+                    android:ellipsize="end"
+                    android:textColor="@color/color_black"
+                    android:background="@drawable/share_white"/>
+
+                <TextView
+                    android:id="@+id/tv_change_shifts_fast_deposit"
+                    android:layout_marginLeft="100px"
+                    android:layout_marginTop="100px"
+                    android:layout_width="400px"
+                    android:layout_height="100px"
+                    android:textSize="60px"
+                    android:text=""
+                    android:gravity="center"
+                    android:lines="1"
+                    android:ellipsize="end"
+                    android:textColor="@color/color_black"
+                    android:background="@drawable/share_white"/>
+
+
+                <TextView
+                    android:id="@+id/tv_change_shifts_zfb_amount"
+                    android:layout_marginLeft="100px"
+                    android:layout_marginTop="100px"
+                    android:layout_width="400px"
+                    android:layout_height="100px"
+                    android:textSize="60px"
+                    android:text=""
+                    android:gravity="center"
+                    android:lines="1"
+                    android:ellipsize="end"
+                    android:textColor="@color/color_black"
+                    android:background="@drawable/share_white"/>
+
+
+
+
+            </com.zhy.autolayout.AutoLinearLayout>
+
+        </com.zhy.autolayout.AutoLinearLayout>
+
+    </com.zhy.autolayout.AutoLinearLayout>
+
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_marginTop="200px"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_change_shifts_clear_coins"
+            android:layout_marginRight="300px"
+            android:layout_width="450px"
+            android:layout_height="180px"
+            android:text="清币"
+            android:textColor="@color/color_blue"
+            android:gravity="center"
+            android:background="@drawable/share_white"
+            android:textSize="120px"/>
+
+
+        <Button
+            android:id="@+id/btn_change_shifts_jb"
+            android:layout_width="450px"
+            android:layout_height="180px"
+            android:text="交班"
+            android:textColor="@color/color_blue"
+            android:gravity="center"
+            android:background="@drawable/share_white"
+            android:textSize="120px"/>
+
+    </com.zhy.autolayout.AutoLinearLayout>
+
+
+</com.zhy.autolayout.AutoLinearLayout>

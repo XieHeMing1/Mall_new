@@ -1,0 +1,465 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:banner="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/arl_main_activity_root"
+    android:clickable="true"
+    android:onClick="onClick">
+
+
+        <com.youth.banner.Banner
+            android:id="@+id/ban_main_banner"
+            android:layout_width="match_parent"
+            android:layout_height="710px"
+            android:visibility="visible"
+            android:background="#DDDDDD"
+            banner:image_scale_type="fit_xy"
+            >
+        </com.youth.banner.Banner>
+
+
+        <Button
+            android:background="#00000000"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/btn_gotoset"
+            />
+
+        <View
+            android:id="@+id/v_updateversion"
+            android:layout_width="100px"
+            android:layout_height="100px"
+            android:background="#00000000"
+            android:layout_alignParentRight="true"/>
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="710px"
+            android:orientation="vertical"
+            android:layout_above="@+id/layout_common_bottom">
+
+            <!--登录栏-->
+            <com.zhy.autolayout.AutoLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="150px"
+                android:orientation="horizontal"
+                android:visibility="gone"
+                android:background="@color/color_green">
+
+                <!--未登录-->
+                <com.zhy.autolayout.AutoRelativeLayout
+                    android:id="@+id/arl_main_unlogin"
+                    android:paddingLeft="20px"
+                    android:paddingRight="20px"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    >
+                    <com.zhy.autolayout.AutoLinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:orientation="horizontal">
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textSize="50px"
+                        android:lines="1"
+                        android:ellipsize="end"
+                        android:text="亲，您还没有登录!"
+                        android:textColor="@color/coloer_wither"/>
+
+                    <Button
+                        android:id="@+id/btn_main_gologin"
+                        android:layout_marginLeft="60px"
+                        android:layout_width="400px"
+                        android:layout_height="100px"
+                        android:text="点击登录"
+                        android:gravity="center"
+                        android:onClick="onClick"
+                        android:lines="1"
+                        android:background="@drawable/shape_grey"
+                        android:textColor="@color/color_green"
+                        android:textSize="60px"/>
+
+
+                    </com.zhy.autolayout.AutoLinearLayout>
+
+                </com.zhy.autolayout.AutoRelativeLayout>
+                <!--登录时-->
+                <com.zhy.autolayout.AutoLinearLayout
+                    android:id="@+id/all_main_logining"
+                    android:paddingLeft="20px"
+                    android:paddingRight="20px"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:visibility="gone"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_main_username"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textSize="50px"
+                        android:lines="1"
+                        android:ellipsize="end"
+                        android:text="欢迎你! "
+                        android:textColor="@color/coloer_wither"/>
+
+                    <TextView
+                        android:id="@+id/tv_main_user_tickets"
+                        android:layout_marginLeft="20px"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:lines="1"
+                        android:ellipsize="end"
+                        android:textSize="50px"
+                        android:textColor="@color/coloer_wither"/>
+
+                    <TextView
+                        android:id="@+id/tv_main_user_coins"
+                        android:layout_marginLeft="30px"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:lines="1"
+                        android:ellipsize="end"
+                        android:textSize="50px"
+                        android:textColor="@color/coloer_wither"/>
+
+
+                </com.zhy.autolayout.AutoLinearLayout>
+                <!--按钮组-->
+                <com.zhy.autolayout.AutoLinearLayout
+                    android:paddingRight="20px"
+                    android:paddingLeft="20px"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/btn_main_add_car"
+                        android:layout_width="140px"
+                        android:layout_height="100px"
+                        android:gravity="center"
+                        android:onClick="onClick"
+                        android:clickable="true"
+                        android:lines="1"
+                        android:background="@drawable/car_white"
+                        android:textSize="60px"/>
+
+
+                    <Button
+                        android:id="@+id/btn_main_go_index_page"
+                        android:layout_marginLeft="50px"
+                        android:layout_width="150px"
+                        android:layout_height="100px"
+                        android:text="首页"
+                        android:gravity="center"
+                        android:onClick="onClick"
+                        android:lines="1"
+                        android:background="@drawable/share_white_5px"
+                        android:textColor="@color/color_black"
+                        android:textSize="45px"/>
+
+                    <Button
+                        android:id="@+id/btn_main_go_buy_coins"
+                        android:layout_marginLeft="30px"
+                        android:layout_width="200px"
+                        android:layout_height="100px"
+                        android:text="购币取币"
+                        android:gravity="center"
+                        android:lines="1"
+                        android:onClick="onClick"
+                        android:background="@drawable/share_white_5px"
+                        android:textColor="@color/color_black"
+                        android:textSize="45px"/>
+
+
+                    <Button
+                        android:id="@+id/btn_main_menber_center"
+                        android:layout_marginLeft="30px"
+                        android:layout_width="200px"
+                        android:layout_height="100px"
+                        android:text="会员中心"
+                        android:gravity="center"
+                        android:lines="1"
+                        android:onClick="onClick"
+                        android:background="@drawable/share_white_5px"
+                        android:textColor="@color/color_black"
+                        android:textSize="45px"/>
+
+                    <Button
+                        android:id="@+id/btn_main_exit_login"
+                        android:layout_marginLeft="30px"
+                        android:layout_width="200px"
+                        android:layout_height="100px"
+                        android:text="退出登录"
+                        android:gravity="center"
+                        android:onClick="onClick"
+                        android:lines="1"
+                        android:background="@drawable/share_white_5px"
+                        android:textColor="@color/color_black"
+                        android:textSize="45px"/>
+
+
+
+                </com.zhy.autolayout.AutoLinearLayout>
+
+            </com.zhy.autolayout.AutoLinearLayout>
+
+
+            <!--分类栏-->
+               <com.zhy.autolayout.AutoLinearLayout
+                    android:id="@+id/ll_dot"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/coloer_wither"
+                    android:paddingBottom="20px"
+                    android:paddingLeft="70px"
+                    android:paddingRight="70px"
+                    android:paddingTop="20px"/>
+
+            <!--搜索栏-->
+            <com.zhy.autolayout.AutoLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#f2f2f2"
+                android:paddingTop="10px"
+                android:paddingBottom="10px"
+                android:paddingRight="50px"
+                android:paddingLeft="50px"
+                android:gravity="center_vertical"
+                android:focusableInTouchMode="true"
+                android:focusable="true"
+                android:orientation="horizontal">
+
+
+                <!--<TextView-->
+                    <!--android:id="@+id/btn_main_hot_search"-->
+                    <!--android:layout_width="280px"-->
+                    <!--android:layout_height="140px"-->
+                    <!--android:background="@drawable/sel_btn_click"-->
+                    <!--android:textColor="@color/coloer_wither"-->
+                    <!--android:text="热门产品"-->
+                    <!--android:onClick="onClick"-->
+                    <!--android:clickable="true"-->
+                    <!--android:gravity="center"-->
+                    <!--android:visibility="gone"-->
+                    <!--android:textSize="60px"/>-->
+
+                <!--<TextView-->
+                    <!--android:id="@+id/btn_main_price_search"-->
+                    <!--android:layout_marginLeft="40px"-->
+                    <!--android:layout_width="280px"-->
+                    <!--android:layout_height="140px"-->
+                    <!--android:background="@drawable/sel_btn_click"-->
+                    <!--android:textColor="@color/coloer_wither"-->
+                    <!--android:text="兑换值"-->
+                    <!--android:onClick="onClick"-->
+                    <!--android:clickable="true"-->
+                    <!--android:gravity="center"-->
+                    <!--android:visibility="gone"-->
+                    <!--android:textSize="60px"/>-->
+
+                <ToggleButton
+                    android:id="@+id/tbtn_main_toggle_search"
+                    android:layout_width="520px"
+                    android:layout_height="140px"
+                    android:background="@drawable/sel_toggle"
+                    android:text=""
+                    android:checked="false"
+                    android:textOff=""
+                    android:textOn="" />
+
+
+                    <com.qy.zgz.mall.widget.ClearEditText
+                        android:layout_marginLeft="40px"
+                        android:id="@+id/cet_main_search"
+                        android:layout_width="match_parent"
+                        android:layout_height="140px"
+                        android:hint="请输入商品关键字"
+                        android:textColorHint="@color/color_grey"
+                        android:background="#E1E1E0"
+                        android:paddingLeft="10px"
+                        android:inputType="text"
+                        android:imeOptions="actionDone"
+                        android:textSize="60px"
+                        android:lines="1"
+                        android:layout_weight="1"
+                        android:textColor="@color/color_black"/>
+
+                    <!--按票数搜索-->
+                    <com.zhy.autolayout.AutoLinearLayout
+                        android:id="@+id/all_main_price_head"
+                        android:layout_width="match_parent"
+                        android:layout_height="140px"
+                        android:layout_weight="1"
+                        android:visibility="gone"
+                        android:gravity="center_vertical"
+                        android:background="@drawable/shape_main_all_grey"
+                        android:orientation="horizontal">
+
+                        <EditText
+                            android:layout_marginLeft="10dp"
+                            android:id="@+id/et_main_low_price"
+                            android:layout_width="match_parent"
+                            android:layout_height="110px"
+                            android:hint="最低票数"
+                            android:textColorHint="@color/color_grey"
+                            android:background="@drawable/shape_main_et_grey"
+                            android:paddingLeft="10px"
+                            android:inputType="number"
+                            android:maxLength="15"
+                            android:gravity="center"
+                            android:imeOptions="actionDone"
+                            android:textSize="60px"
+                            android:lines="1"
+                            android:layout_weight="1"
+                            android:textColor="@color/color_black"/>
+
+                        <TextView
+                            android:layout_marginLeft="10px"
+                            android:layout_marginRight="10px"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:text="~"
+                            android:textColor="@color/color_black"
+                            android:textSize="60px"
+                            />
+
+                        <EditText
+                            android:id="@+id/et_main_high_price"
+                            android:layout_width="match_parent"
+                            android:layout_height="110px"
+                            android:hint="最高票数"
+                            android:textColorHint="@color/color_grey"
+                            android:background="@drawable/shape_main_et_grey"
+                            android:paddingLeft="10px"
+                            android:inputType="number"
+                            android:maxLength="15"
+                            android:gravity="center"
+                            android:imeOptions="actionDone"
+                            android:textSize="60px"
+                            android:lines="1"
+                            android:layout_weight="1"
+                            android:textColor="@color/color_black"/>
+
+                        <org.angmarch.views.NiceSpinner
+                            android:layout_marginLeft="20px"
+                            android:id="@+id/ns_main_nice_spinner"
+                            android:layout_width="match_parent"
+                            android:layout_height="110px"
+                            android:gravity="center"
+                            android:background="#E1E1E0"
+                            android:textSize="35px"
+                            android:lines="1"
+                            android:ellipsize="end"
+                            android:textColor="@color/color_black"
+                            android:layout_weight="1"
+                            />
+
+                    </com.zhy.autolayout.AutoLinearLayout>
+
+                    <TextView
+                        android:id="@+id/iv_main_gosearch"
+                        android:layout_width="220px"
+                        android:layout_height="140px"
+                        android:layout_gravity="center_vertical"
+                        android:onClick="onClick"
+                        android:clickable="true"
+                        android:textSize="60px"
+                        android:text="搜索"
+                        android:background="@drawable/shape_green_right"
+                        android:textColor="@color/coloer_wither"
+                        android:gravity="center"/>
+
+                    <ImageView
+                        android:layout_marginLeft="40px"
+                        android:id="@+id/iv_main_predefine"
+                        android:layout_width="260px"
+                        android:layout_height="140px"
+                        android:layout_gravity="center_vertical"
+                        android:onClick="onClick"
+                        android:clickable="true"
+                        android:src="@drawable/diy_bg"/>
+
+
+            </com.zhy.autolayout.AutoLinearLayout>
+
+            <!--底部商品 height约等于2679-->
+                <com.zhy.autolayout.AutoRelativeLayout
+                    android:id="@+id/arl_main_bottom_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#DDDDDD"
+                    android:visibility="gone"
+                    android:padding="40px">
+
+                    <com.qy.zgz.mall.widget.NoScrollViewPager
+                        android:id="@+id/vpager"
+                        android:layout_width="match_parent"
+                        android:background="#DDDDDD"
+                        android:layout_height="match_parent"/>
+
+                    <com.kevin.wraprecyclerview.WrapRecyclerView
+                        android:id="@+id/gv_main_info"
+                        android:layout_width="match_parent"
+                        android:background="#DDDDDD"
+                        android:layout_height="match_parent"
+                        android:scrollbars="none"
+                        android:visibility="gone"
+                       />
+
+                </com.zhy.autolayout.AutoRelativeLayout>
+
+            <!--购物车-->
+            <com.zhy.autolayout.AutoFrameLayout
+                android:id="@+id/main_fragment_content"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#DDDDDD"
+                />
+
+
+        </com.zhy.autolayout.AutoLinearLayout>
+
+    <ImageView
+        android:id="@+id/iv_red_packet"
+        android:layout_width="400px"
+        android:layout_height="400px"
+        android:visibility="visible"
+        android:src="@drawable/hand"
+        android:background="#00000000"
+        android:scaleType="centerInside"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"/>
+
+    <!--<ImageView-->
+        <!--android:id="@+id/sdv_customor_enquiry"-->
+        <!--android:layout_width="500px"-->
+        <!--android:layout_height="180px"-->
+        <!--android:layout_alignParentRight="true"-->
+        <!--android:layout_marginTop="2600px"-->
+        <!--android:background="@drawable/ic_customor_enquiry"/>-->
+
+    <include
+        android:id="@+id/layout_common_bottom"
+        layout="@layout/layout_common_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"></include>
+
+
+</com.zhy.autolayout.AutoRelativeLayout>

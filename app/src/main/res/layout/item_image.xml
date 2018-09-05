@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="#DDDDDD">
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/iv_item"
+        android:layout_width="512px"
+        android:layout_height="512px"
+        fresco:layout_auto_baseheight="width"
+        fresco:actualImageScaleType="centerCrop"
+        />
+    
+    <TextView
+        android:layout_marginTop="10px"
+        android:id="@+id/tv_smallimg_name"
+        android:layout_width="512px"
+        android:layout_height="wrap_content"
+        android:lines="2"
+        android:clickable="true"
+        android:textSize="30px"
+        android:textColor="@color/color_black"
+        android:ellipsize="end"
+        android:text=""/>
+    
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:id="@+id/arl_item_image_price"
+        android:layout_marginTop="5px"
+        android:layout_width="512px"
+        android:clickable="true"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_smallimg_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:lines="1"
+            android:textSize="36px"
+            android:layout_centerVertical="true"
+            android:textColor="#80268A"
+            android:text="彩票 : "
+            android:ellipsize="end"/>
+
+        <TextView
+            android:layout_marginLeft="10px"
+            android:layout_toRightOf="@id/tv_smallimg_price"
+            android:id="@+id/tv_smallimg_price_now"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:lines="1"
+            android:textSize="36px"
+            android:layout_centerVertical="true"
+            android:textColor="@color/color_red"
+            android:text="现彩票 : "
+            android:visibility="gone"
+            android:ellipsize="end"/>
+
+        <ImageView
+            android:id="@+id/iv_item_image_shopcar"
+            android:layout_width="60px"
+            android:layout_height="60px"
+            android:src="@drawable/icon_car"
+            android:clickable="true"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20px"
+            />
+
+    </com.zhy.autolayout.AutoRelativeLayout>
+</com.zhy.autolayout.AutoLinearLayout>

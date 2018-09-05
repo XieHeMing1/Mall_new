@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_shift_sequence"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="2018-05-09一体机班次"
+        android:textColor="@color/color_blue"
+        android:textSize="60px" />
+
+    <TextView
+        android:id="@+id/tv_shift_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="2018-05-09 10:00--2018-05-09 16:00"
+        android:textColor="@color/color_blue"
+        android:textSize="60px" />
+
+    <TextView
+        android:id="@+id/tv_shift_order_state"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20px"
+        android:gravity="center"
+        android:text="正在同步订单状态，请稍后..."
+        android:textColor="@color/color_black"
+        android:textSize="60px" />
+
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50px"
+        android:layout_marginLeft="30px"
+        android:orientation="horizontal">
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="100px"
+                android:gravity="center|left"
+                android:text="初始币数"
+                android:textColor="@color/color_black"
+                android:textSize="60px" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="100px"
+                android:layout_marginTop="50px"
+                android:gravity="center|left"
+                android:text="结算币数"
+                android:textColor="@color/color_black"
+                android:textSize="60px" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="100px"
+                android:layout_marginTop="50px"
+                android:gravity="center|left"
+                android:text="盘点币数"
+                android:textColor="@color/color_black"
+                android:textSize="60px" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="100px"
+                android:layout_marginTop="100px"
+                android:gravity="center|left"
+                android:text="销售现金"
+                android:textColor="@color/color_black"
+                android:textSize="60px" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="100px"
+                android:layout_marginTop="50px"
+                android:gravity="center|left"
+                android:text="金额差异"
+                android:textColor="@color/color_black"
+                android:textSize="60px" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="100px"
+                android:layout_marginTop="50px"
+                android:gravity="center|left"
+                android:text="实收微支付"
+                android:textColor="@color/color_black"
+                android:textSize="60px" />
+
+        </com.zhy.autolayout.AutoLinearLayout>
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_shift_original_coin"
+                android:layout_width="match_parent"
+                android:layout_height="100px"
+                android:background="@drawable/share_white"
+                android:ellipsize="end"
+                android:gravity="center|left"
+                android:textColor="@color/color_black"
+                android:textSize="60px" />
+
+            <TextView
+                android:id="@+id/tv_shift_final_coin"
+                android:layout_width="match_parent"
+                android:layout_height="100px"
+                android:layout_marginTop="50px"
+                android:background="@drawable/share_white"
+                android:ellipsize="end"
+                android:gravity="center|left"
+                android:textColor="@color/color_black"
+                android:textSize="60px" />
+
+            <TextView
+                android:id="@+id/tv_shift_check_coin"
+                android:layout_width="match_parent"
+                android:layout_height="100px"
+                android:layout_marginTop="50px"
+                android:background="@drawable/share_white"
+                android:ellipsize="end"
+                android:gravity="center|left"
+                android:textColor="@color/color_black"
+                android:textSize="60px" />
+
+            <TextView
+                android:id="@+id/tv_shift_sale_cash"
+                android:layout_width="match_parent"
+                android:layout_height="100px"
+                android:layout_marginTop="100px"
+                android:background="@drawable/share_white"
+                android:ellipsize="end"
+                android:gravity="center|left"
+                android:textColor="@color/color_black"
+                android:textSize="60px" />
+
+            <TextView
+                android:id="@+id/tv_shift_money_difference"
+                android:layout_width="match_parent"
+                android:layout_height="100px"
+                android:layout_marginTop="50px"
+                android:background="@drawable/share_white"
+                android:ellipsize="end"
+                android:gravity="center|left"
+                android:textColor="@color/color_black"
+                android:textSize="60px" />
+
+            <TextView
+                android:id="@+id/tv_shift_real_wx_account"
+                android:layout_width="match_parent"
+                android:layout_height="100px"
+                android:layout_marginTop="50px"
+                android:background="@drawable/share_white"
+                android:ellipsize="end"
+                android:gravity="center|left"
+                android:textColor="@color/color_black"
+                android:textSize="60px" />
+        </com.zhy.autolayout.AutoLinearLayout>
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginRight="30px"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="100px"
+                android:gravity="center|right"
+                android:text="加币数"
+                android:textColor="@color/color_black"
+                android:textSize="60px" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="100px"
+                android:layout_marginTop="50px"
+                android:gravity="center|right"
+                android:text="出币数"
+                android:textColor="@color/color_black"
+                android:textSize="60px" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="100px"
+                android:layout_marginTop="50px"
+                android:gravity="center|right"
+                android:text="差异币数"
+                android:textColor="@color/color_black"
+                android:textSize="60px" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="100px"
+                android:layout_marginTop="100px"
+                android:gravity="center|right"
+                android:text="实收现金"
+                android:textColor="@color/color_black"
+                android:textSize="60px" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="100px"
+                android:layout_marginTop="50px"
+                android:gravity="center|right"
+                android:text="实收预存款"
+                android:textColor="@color/color_black"
+                android:textSize="60px" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="100px"
+                android:layout_marginTop="50px"
+                android:gravity="center|right"
+                android:text="实收支付宝"
+                android:textColor="@color/color_black"
+                android:textSize="60px" />
+
+        </com.zhy.autolayout.AutoLinearLayout>
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginRight="30px"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_shift_increase_coin"
+                android:layout_width="match_parent"
+                android:layout_height="100px"
+                android:background="@drawable/share_white"
+                android:ellipsize="end"
+                android:gravity="center|left"
+                android:textColor="@color/color_black"
+                android:textSize="60px" />
+
+            <TextView
+                android:id="@+id/tv_shift_export_coin"
+                android:layout_width="match_parent"
+                android:layout_height="100px"
+                android:layout_marginTop="50px"
+                android:background="@drawable/share_white"
+                android:ellipsize="end"
+                android:gravity="center|left"
+                android:textColor="@color/color_black"
+                android:textSize="60px" />
+
+            <TextView
+                android:id="@+id/tv_shift_different_coin"
+                android:layout_width="match_parent"
+                android:layout_height="100px"
+                android:layout_marginTop="50px"
+                android:background="@drawable/share_white"
+                android:ellipsize="end"
+                android:gravity="center|left"
+                android:textColor="@color/color_black"
+                android:textSize="60px" />
+
+            <TextView
+                android:id="@+id/tv_shift_real_receive_cash"
+                android:layout_width="match_parent"
+                android:layout_height="100px"
+                android:layout_marginTop="100px"
+                android:background="@drawable/share_white"
+                android:ellipsize="end"
+                android:gravity="center|left"
+                android:textColor="@color/color_black"
+                android:textSize="60px" />
+
+            <TextView
+                android:id="@+id/tv_shift_real_receive_deposit"
+                android:layout_width="match_parent"
+                android:layout_height="100px"
+                android:layout_marginTop="50px"
+                android:background="@drawable/share_white"
+                android:ellipsize="end"
+                android:gravity="center|left"
+                android:textColor="@color/color_black"
+                android:textSize="60px" />
+
+            <TextView
+                android:id="@+id/tv_shift_real_alipay_account"
+                android:layout_width="match_parent"
+                android:layout_height="100px"
+                android:layout_marginTop="50px"
+                android:background="@drawable/share_white"
+                android:ellipsize="end"
+                android:gravity="center|left"
+                android:textColor="@color/color_black"
+                android:textSize="60px" />
+
+        </com.zhy.autolayout.AutoLinearLayout>
+
+    </com.zhy.autolayout.AutoLinearLayout>
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="90px"
+        android:layout_marginRight="90px"
+        android:layout_marginTop="100px"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_shift_clear_coins"
+            android:layout_width="0px"
+            android:layout_height="180px"
+            android:layout_marginRight="70px"
+            android:layout_weight="1"
+            android:background="@drawable/share_white"
+            android:gravity="center"
+            android:text="清币"
+            android:textColor="@color/color_blue"
+            android:textSize="60px" />
+
+
+        <Button
+            android:id="@+id/btn_shift_work"
+            android:layout_width="0px"
+            android:layout_height="180px"
+            android:layout_marginLeft="70px"
+            android:layout_weight="1"
+            android:background="@drawable/share_white"
+            android:gravity="center"
+            android:text="交班"
+            android:textColor="@color/color_blue"
+            android:textSize="60px" />
+
+    </com.zhy.autolayout.AutoLinearLayout>
+
+
+</com.zhy.autolayout.AutoLinearLayout>

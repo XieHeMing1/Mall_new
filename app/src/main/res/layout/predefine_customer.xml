@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoFrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:layout_width="1800px"
+        android:layout_height="2502px"
+        android:layout_gravity="center"
+     >
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="1800px"
+        android:layout_height="2502px"
+        android:background="#8BD4FD"
+        android:orientation="vertical">
+
+            <com.zhy.autolayout.AutoFrameLayout
+                android:layout_width="1800px"
+                android:layout_height="810px">
+
+                <com.zhy.autolayout.AutoLinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center">
+
+                <ImageView
+                    android:id="@+id/iv_predefine_qrimg"
+                    android:layout_width="700px"
+                    android:layout_height="700px"
+                    android:src="@drawable/qr_cust_service"
+                    android:scaleType="fitXY"
+                   />
+
+                <com.zhy.autolayout.AutoLinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="100px"
+                    android:layout_gravity="center_vertical"
+                   >
+
+                <TextView
+                    android:id="@+id/tv_predefine_customer_waya"
+                    android:layout_width="600px"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:textSize="50px"
+                    android:text=""/>
+
+                    <TextView
+                        android:id="@+id/tv_predefine_customer_wayb"
+                        android:layout_width="600px"
+                        android:layout_marginTop="100px"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:textSize="50px"
+                        android:text=""/>
+
+                </com.zhy.autolayout.AutoLinearLayout>
+
+                </com.zhy.autolayout.AutoLinearLayout>
+
+            </com.zhy.autolayout.AutoFrameLayout>
+
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_marginTop="50px"
+            android:layout_width="1800px"
+            android:layout_height="1690px"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+
+            
+            <EditText
+                android:id="@+id/et_predefine_customer_info"
+                android:layout_width="1600px"
+                android:layout_height="800px"
+                android:paddingTop="220px"
+                android:paddingLeft="80px"
+                android:paddingRight="50px"
+                android:paddingBottom="30px"
+                android:textColorHint="#757575"
+                android:textSize="50px"
+                android:gravity="left"
+                android:hint="亲，请输入您想要的商品、礼物的名称或描述，我们会尽快联系您，并对您的愿望做出反馈"
+                android:textColor="@color/color_black"
+                android:background="@drawable/bg_et_gif_predefine"
+                />
+
+
+            <EditText
+                android:layout_marginTop="80px"
+                android:id="@+id/et_predefine_customer_phone"
+                android:layout_width="1600px"
+                android:layout_height="150px"
+                android:textColorHint="#757575"
+                android:textSize="50px"
+                android:paddingLeft="50px"
+                android:maxLength="11"
+                android:inputType="number"
+                android:hint="请输入您的手机号码"
+                android:textColor="@color/color_black"
+                android:background="@drawable/bg_et_phone_predefines"/>
+
+            <TextView
+                android:id="@+id/tv_predefine_customer_remark"
+                android:layout_marginTop="60px"
+                android:layout_width="1450px"
+                android:layout_height="wrap_content"
+                android:textSize="40px"
+                android:textColor="@color/color_black"
+                android:gravity="left"/>
+
+            <Button
+                android:id="@+id/btn_predefine_customer_submit"
+                android:layout_marginTop="60px"
+                android:layout_width="600px"
+                android:layout_height="120px"
+                android:textSize="50px"
+                android:text="立即提交"
+                android:background="@drawable/bg_btn_predefine"
+                android:textColor="#000C79"
+                android:gravity="center"/>
+
+        </com.zhy.autolayout.AutoLinearLayout>
+        
+    </com.zhy.autolayout.AutoLinearLayout>
+
+        <ImageView
+            android:id="@+id/tv_close"
+            android:layout_width="120px"
+            android:layout_height="120px"
+            android:background="@drawable/close"
+            android:clickable="true"
+            android:layout_marginTop="5px"
+            android:layout_marginRight="10px"
+            android:layout_alignParentRight="true"
+            />
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+</com.zhy.autolayout.AutoFrameLayout>

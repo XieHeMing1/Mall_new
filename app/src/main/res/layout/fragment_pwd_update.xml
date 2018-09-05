@@ -1,0 +1,186 @@
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:orientation="vertical"
+             tools:context="com.qy.zgz.mall.page.money_purchase.pwd_update.PwdUpdateFragment">
+
+    <!--fragment标题-->
+    <TextView
+        android:layout_marginLeft="50px"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="120px"
+        android:text="修改密码"
+        android:lines="1"/>
+    
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_marginTop="200px"
+        android:layout_marginLeft="50px"
+        android:layout_marginRight="100px"
+        android:focusableInTouchMode="true"
+        android:focusable="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="60px"
+            android:text="请输入您的密码："
+            android:textColor="@color/color_black"/>
+        
+        <EditText
+            android:id="@+id/et_pwdupdate_oldpwd"
+            android:layout_marginLeft="100px"
+            android:layout_width="match_parent"
+            android:layout_height="200px"
+            android:textSize="60px"
+            android:paddingLeft="50px"
+            android:paddingRight="50px"
+            android:maxLength="6"
+            android:inputType="numberPassword"
+            android:gravity="center_vertical"
+            android:textColor="@color/color_black"
+            android:background="@drawable/share_white"
+            />
+
+
+
+    </com.zhy.autolayout.AutoLinearLayout>
+
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_marginTop="100px"
+        android:layout_marginLeft="50px"
+        android:layout_marginRight="100px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="60px"
+            android:text="请请请请请请请："
+            android:visibility="invisible"
+            android:textColor="@color/color_black"/>
+
+        <TextView
+            android:layout_marginLeft="150px"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="80px"
+            android:text="如果忘记密码，请到前台工作人员处查询。"
+            android:maxEms="19"
+            android:lines="2"
+            android:ellipsize="end"
+            android:textColor="@color/color_green"/>
+
+
+    </com.zhy.autolayout.AutoLinearLayout>
+
+
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_marginTop="200px"
+        android:layout_marginLeft="50px"
+        android:layout_marginRight="100px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="60px"
+            android:text="请输入您的新密码："
+            android:textColor="@color/color_black"/>
+
+        <EditText
+            android:id="@+id/et_pwdupdate_npwd"
+            android:layout_marginLeft="100px"
+            android:layout_width="match_parent"
+            android:layout_height="200px"
+            android:textSize="60px"
+            android:paddingLeft="50px"
+            android:paddingRight="50px"
+            android:maxLength="6"
+            android:inputType="numberPassword"
+            android:gravity="center_vertical"
+            android:textColor="@color/color_black"
+            android:background="@drawable/share_white"
+            />
+
+
+    </com.zhy.autolayout.AutoLinearLayout>
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_marginTop="100px"
+        android:layout_marginLeft="50px"
+        android:layout_marginRight="100px"
+        android:focusableInTouchMode="true"
+        android:focusable="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="60px"
+            android:text="请确认您的新密码："
+            android:textColor="@color/color_black"/>
+
+        <EditText
+            android:id="@+id/et_pwdupdate_cpwd"
+            android:layout_marginLeft="100px"
+            android:layout_width="match_parent"
+            android:layout_height="200px"
+            android:textSize="60px"
+            android:paddingLeft="50px"
+            android:paddingRight="50px"
+            android:maxLength="6"
+            android:inputType="numberPassword"
+            android:gravity="center_vertical"
+            android:textColor="@color/color_black"
+            android:background="@drawable/share_white"
+            />
+
+
+    </com.zhy.autolayout.AutoLinearLayout>
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_marginTop="200px"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_pwdupdate_cancel"
+            android:layout_width="400px"
+            android:layout_height="150px"
+            android:text="取消"
+            android:textSize="60px"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textColor="#01AAEE"
+            android:background="@drawable/share_white"/>
+
+        <Button
+            android:id="@+id/btn_pwdupdate_comfire"
+            android:layout_marginLeft="300px"
+            android:layout_width="400px"
+            android:layout_height="150px"
+            android:text="确认更改"
+            android:textSize="60px"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textColor="#01AAEE"
+            android:background="@drawable/share_white"/>
+
+    </com.zhy.autolayout.AutoLinearLayout>
+
+</com.zhy.autolayout.AutoLinearLayout>

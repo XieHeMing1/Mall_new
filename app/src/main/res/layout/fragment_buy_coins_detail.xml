@@ -1,0 +1,170 @@
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:orientation="vertical"
+             tools:context="com.qy.zgz.mall.page.money_purchase.BuyCoinsDetailFragment">
+
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="1200px"
+        android:layout_height="450px"
+        android:orientation="horizontal"
+        android:layout_gravity="center_horizontal"
+        android:paddingTop="250px"
+        android:background="@drawable/bg_taocan">
+
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            >
+        
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="horizontal"
+            android:gravity="bottom">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="60px"
+                android:text="币数 : "
+                android:textColor="@color/color_black"
+                />
+
+            <TextView
+                android:id="@+id/tv_fg_buy_coins_detail_coins"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="80px"
+                android:text=""
+                android:maxLines="2"
+                android:ellipsize="end"
+                android:textColor="#F26F3B"
+                />
+
+        </com.zhy.autolayout.AutoLinearLayout>
+
+        </com.zhy.autolayout.AutoRelativeLayout>
+
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            >
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="horizontal"
+            android:gravity="bottom">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="60px"
+                android:text="金额 : "
+                android:textColor="@color/color_black"
+                />
+
+            <TextView
+                android:id="@+id/tv_fg_buy_coins_detail_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="80px"
+                android:text=""
+                android:textColor="#F26F3B"
+                />
+
+        </com.zhy.autolayout.AutoLinearLayout>
+
+        </com.zhy.autolayout.AutoRelativeLayout>
+
+
+    </com.zhy.autolayout.AutoLinearLayout>
+
+    <TextView
+        android:layout_marginTop="150px"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:textSize="100px"
+        android:text="支付方式"
+        android:textColor="@color/color_black"/>
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_marginTop="100px"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal">
+        
+        <ImageView
+            android:id="@+id/iv_fg_buy_coins_detail_wxpay"
+            android:layout_width="500px"
+            android:layout_height="500px"
+            android:clickable="true"
+            android:visibility="gone"
+            android:src="@drawable/pay_wx"/>
+
+        <ImageView
+            android:id="@+id/iv_fg_buy_coins_detail_zfbpay"
+            android:layout_marginLeft="100px"
+            android:layout_width="500px"
+            android:layout_height="500px"
+            android:clickable="true"
+            android:src="@drawable/pay_zfb"/>
+
+        <ImageView
+            android:id="@+id/iv_fg_buy_coins_detail_cashpay"
+            android:layout_marginLeft="100px"
+            android:layout_width="500px"
+            android:layout_height="500px"
+            android:clickable="true"
+            android:visibility="visible"
+            android:src="@drawable/pay_cash"/>
+
+
+    </com.zhy.autolayout.AutoLinearLayout>
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:id="@+id/all_fragment_buy_coins_detail_zfbpaytis"
+        android:layout_marginTop="80px"
+        android:paddingLeft="80px"
+        android:paddingRight="80px"
+        android:paddingTop="30px"
+        android:paddingBottom="30px"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/share_semitransparent"
+        android:visibility="gone"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="400px"
+            android:layout_height="400px"
+            android:visibility="visible"
+            android:src="@drawable/thc_pay_tis_a"/>
+
+        <ImageView
+            android:layout_marginLeft="80px"
+            android:layout_width="400px"
+            android:layout_height="400px"
+            android:src="@drawable/thc_pay_tis_b"/>
+
+        <ImageView
+            android:layout_marginLeft="80px"
+            android:layout_width="400px"
+            android:layout_height="400px"
+            android:visibility="visible"
+            android:src="@drawable/thc_pay_tis_c"/>
+
+
+    </com.zhy.autolayout.AutoLinearLayout>
+
+</com.zhy.autolayout.AutoLinearLayout>

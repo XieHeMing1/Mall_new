@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoRelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg_buycoins_img"
+    tools:context="com.qy.zgz.mall.page.money_purchase.BuyCoinsActivity">
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!--会员信息登录中-->
+        <com.zhy.autolayout.AutoLinearLayout
+            android:id="@+id/all_buy_coin_logining"
+            android:layout_width="match_parent"
+            android:layout_height="1000px"
+            android:visibility="visible"
+            android:orientation="horizontal">
+
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center_horizontal"
+                android:paddingTop="80px"
+                android:paddingLeft="100px"
+                android:layout_weight="1">
+
+
+
+                <ImageView
+                    android:layout_marginTop="100px"
+                    android:layout_width="200px"
+                    android:layout_height="200px"
+                    android:src="@drawable/portrait"/>
+
+                <TextView
+                    android:layout_marginTop="30px"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="80px"
+                    android:textColor="@color/color_blue"
+                    android:textStyle="bold"
+                    android:text="管理系统"/>
+
+
+                <ImageView
+                    android:layout_marginTop="80px"
+                    android:id="@+id/iv_error_handle_close_system"
+                    android:layout_width="400px"
+                    android:layout_height="100px"
+                    android:clickable="true"
+                    android:onClick="onClick"
+                    android:visibility="visible"
+                    android:src="@drawable/btn_bg_close_system"
+                    android:layout_centerInParent="true"/>
+
+                <ImageView
+                    android:layout_marginTop="80px"
+                    android:id="@+id/iv_error_handle_reboot_system"
+                    android:layout_width="400px"
+                    android:layout_height="100px"
+                    android:clickable="true"
+                    android:onClick="onClick"
+                    android:visibility="visible"
+                    android:src="@drawable/btn_bg_reboot_system"
+                    android:layout_centerInParent="true"/>
+
+
+
+
+
+
+            </com.zhy.autolayout.AutoLinearLayout>
+
+
+
+        </com.zhy.autolayout.AutoLinearLayout>
+
+
+
+        <!--操作按钮组-->
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="200px"
+            android:background="@drawable/bg_buy_coins_btn"
+            android:orientation="horizontal">
+
+            <com.zhy.autolayout.AutoRelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+                <ImageView
+                    android:id="@+id/iv_error_handle_clearbug"
+                    android:layout_width="500px"
+                    android:layout_height="100px"
+                    android:clickable="true"
+                    android:onClick="onClick"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/btn_clearbug"/>
+
+            </com.zhy.autolayout.AutoRelativeLayout>
+
+
+            <com.zhy.autolayout.AutoRelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+                <ImageView
+                    android:id="@+id/iv_error_handle_jb"
+                    android:layout_width="500px"
+                    android:layout_height="100px"
+                    android:clickable="true"
+                    android:onClick="onClick"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/sel_bg_jb_btn"/>
+
+            </com.zhy.autolayout.AutoRelativeLayout>
+
+
+            <com.zhy.autolayout.AutoRelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:id="@+id/iv_error_handle_yccl"
+                    android:layout_width="500px"
+                    android:layout_height="100px"
+                    android:clickable="true"
+                    android:onClick="onClick"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/sel_bg_yccl_btn"/>
+
+
+            </com.zhy.autolayout.AutoRelativeLayout>
+
+
+            <com.zhy.autolayout.AutoRelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+                <ImageView
+                    android:id="@+id/iv_error_handle_exit"
+                    android:layout_width="500px"
+                    android:layout_height="100px"
+                    android:clickable="true"
+                    android:onClick="onClick"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/out_btn"/>
+
+            </com.zhy.autolayout.AutoRelativeLayout>
+
+        </com.zhy.autolayout.AutoLinearLayout>
+
+        <!--倒计时-->
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_marginTop="50px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:lines="1"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:textSize="60px"
+                android:text="20秒没有操作界面系统自动退出登录"
+                android:textColor="@color/color_black"/>
+
+            <TextView
+                android:id="@+id/tv_error_handle_time"
+                android:layout_marginTop="50px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:lines="1"
+                android:ellipsize="end"
+                android:textSize="100px"
+                android:gravity="center"
+                android:text="倒计时：00:00"
+                android:textStyle="bold"
+                android:textColor="@color/coloer_wither"/>
+
+        </com.zhy.autolayout.AutoLinearLayout>
+
+        <FrameLayout
+            android:id="@+id/fl_error_handle_fragment"
+            android:layout_marginTop="100px"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/transparent"
+            >
+
+        </FrameLayout>
+
+    </com.zhy.autolayout.AutoLinearLayout>
+
+
+
+
+</com.zhy.autolayout.AutoRelativeLayout>

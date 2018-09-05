@@ -1,0 +1,279 @@
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:orientation="vertical"
+             tools:context="com.qy.zgz.mall.page.money_purchase.purchase_record.PurchaseRecordFragment">
+
+    <!--fragment标题-->
+    <TextView
+        android:layout_marginLeft="50px"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="120px"
+        android:text="消费记录查询（1个月内）"
+        android:lines="1"/>
+    
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_marginTop="100px"
+        android:layout_marginLeft="50px"
+        android:layout_marginRight="50px"
+        android:layout_width="match_parent"
+        android:layout_height="300px"
+        android:background="@drawable/share_white_30px"
+        android:orientation="horizontal">
+
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+        <Button
+            android:id="@+id/btn_fg_purchase_record_all"
+            android:layout_width="400px"
+            android:layout_height="150px"
+            android:layout_centerInParent="true"
+            android:text="全部记录"
+            android:textSize="60px"
+            android:gravity="center"
+            android:textColor="@color/color_blue"
+            android:background="@drawable/sel_bg_btn_purchase"
+            />
+
+        </com.zhy.autolayout.AutoRelativeLayout>
+
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <Button
+                android:id="@+id/btn_fg_purchase_record_buy"
+                android:layout_width="400px"
+                android:layout_height="150px"
+                android:layout_centerInParent="true"
+                android:text="购币记录"
+                android:textSize="60px"
+                android:gravity="center"
+                android:visibility="invisible"
+                android:textColor="@color/color_blue"
+                android:background="@drawable/sel_bg_btn_purchase"
+                />
+
+        </com.zhy.autolayout.AutoRelativeLayout>
+
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <Button
+                android:id="@+id/btn_fg_purchase_record_take"
+                android:layout_width="400px"
+                android:layout_height="150px"
+                android:layout_centerInParent="true"
+                android:text="提币记录"
+                android:textSize="60px"
+                android:gravity="center"
+                android:visibility="invisible"
+                android:textColor="@color/color_blue"
+                android:background="@drawable/sel_bg_btn_purchase"
+                />
+
+        </com.zhy.autolayout.AutoRelativeLayout>
+
+
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <Button
+                android:id="@+id/btn_fg_purchase_record_exchange"
+                android:layout_width="400px"
+                android:layout_height="150px"
+                android:layout_centerInParent="true"
+                android:text="礼品兑换记录"
+                android:textSize="60px"
+                android:visibility="invisible"
+                android:gravity="center"
+                android:textColor="@color/color_blue"
+                android:background="@drawable/sel_bg_btn_purchase"
+                />
+
+        </com.zhy.autolayout.AutoRelativeLayout>
+
+    </com.zhy.autolayout.AutoLinearLayout>
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_marginTop="100px"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="50px"
+        android:layout_marginRight="50px"
+        android:layout_height="wrap_content"
+        android:paddingTop="50px"
+        android:background="@drawable/share_white_30px_2"
+        android:paddingBottom="50px"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            >
+
+            <TextView
+                android:id="@+id/tv_purchase_record_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_centerInParent="true"
+                android:textSize="46px"
+                android:lines="2"
+                android:ellipsize="end"
+                android:text="日期"
+                android:maxEms="10"/>
+        </com.zhy.autolayout.AutoRelativeLayout>
+
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            >
+            <TextView
+                android:id="@+id/tv_purchase_record_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_centerInParent="true"
+                android:text="业务类型"
+                android:textSize="46px"
+                android:lines="1"
+                />
+
+        </com.zhy.autolayout.AutoRelativeLayout>
+
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            >
+
+            <TextView
+                android:id="@+id/tv_purchase_record_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="20px"
+                android:textSize="46px"
+                android:text="金额"
+                android:lines="1"
+                />
+        </com.zhy.autolayout.AutoRelativeLayout>
+
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            >
+            <TextView
+                android:id="@+id/tv_purchase_record_coins"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="20px"
+                android:textSize="46px"
+                android:lines="1"
+                android:text="游戏币"
+                />
+        </com.zhy.autolayout.AutoRelativeLayout>
+
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            >
+
+            <TextView
+                android:id="@+id/tv_purchase_record_recoins"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="20px"
+                android:textSize="46px"
+                android:text="代币"
+                android:lines="1"
+                />
+
+        </com.zhy.autolayout.AutoRelativeLayout>
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            >
+            <TextView
+                android:id="@+id/tv_purchase_record_deposit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="20px"
+                android:textSize="46px"
+                android:lines="1"
+                android:text="预存款"
+                />
+
+        </com.zhy.autolayout.AutoRelativeLayout>
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            >
+            <TextView
+                android:id="@+id/tv_purchase_record_ticket"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="彩票"
+                android:layout_marginLeft="20px"
+                android:textSize="46px"
+                android:lines="1"
+                />
+        </com.zhy.autolayout.AutoRelativeLayout>
+
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            >
+            <TextView
+                android:id="@+id/tv_purchase_record_point"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="20px"
+                android:textSize="46px"
+                android:lines="1"
+                android:text="积分"
+                />
+        </com.zhy.autolayout.AutoRelativeLayout>
+    </com.zhy.autolayout.AutoLinearLayout>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_purchase_record_info"
+        android:layout_marginLeft="50px"
+        android:layout_marginRight="50px"
+        android:layout_marginBottom="50px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="50px"
+        android:paddingRight="50px"
+        android:background="@drawable/share_white_30px_3"/>
+
+
+
+</com.zhy.autolayout.AutoLinearLayout>

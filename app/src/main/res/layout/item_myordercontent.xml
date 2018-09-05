@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoRelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="2278px"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#DDDDDD"
+    >
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_myorder_content_info"
+        android:layout_width="2278px"
+        android:layout_height="match_parent"
+        android:background="#DDDDDD"/>
+
+    <TextView
+        android:id="@+id/tv_item_myorder_content_nodata"
+        android:layout_width="2278px"
+        android:layout_height="match_parent"
+        android:text="暂无数据！"
+        android:gravity="center"
+        android:textColor="@color/color_black"
+        android:textSize="100px"
+        android:background="#DDDDDD"/>
+
+
+
+</com.zhy.autolayout.AutoRelativeLayout>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                     xmlns:app="http://schemas.android.com/apk/res-auto"
+                                     android:orientation="vertical"
+                                     android:layout_width="wrap_content"
+                                     android:layout_height="wrap_content"
+                                     android:gravity="center_horizontal"
+                                     android:background="@color/transparent"
+    >
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:layout_width="1200px"
+        android:layout_height="1600px"
+        android:background="@drawable/bg_game_failure"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical"
+        >
+
+        <!--<com.airbnb.lottie.LottieAnimationView-->
+            <!--android:id="@+id/lv_dialog_failure_animation"-->
+            <!--android:layout_alignParentRight="true"-->
+            <!--android:layout_marginTop="20px"-->
+            <!--android:layout_marginRight="20px"-->
+            <!--android:layout_width="300px"-->
+            <!--android:layout_height="300px"-->
+            <!--app:lottie_fileName="animation/number.json"-->
+            <!--app:lottie_loop="true"-->
+            <!--app:lottie_autoPlay="true"/>-->
+
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:id="@+id/all_dialog_game_failure_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="150px">
+
+            <Button
+                android:id="@+id/btn_dialog_game_failure_no"
+                android:layout_width="400px"
+                android:layout_height="150px"
+                android:layout_marginRight="50px"
+                android:background="@drawable/btn_game_go"
+                android:gravity="center"
+                android:text=""
+                android:textColor="@color/coloer_wither"
+                android:textSize="60px"
+                />
+
+            <Button
+                android:id="@+id/btn_dialog_game_failure_yes"
+                android:layout_width="400px"
+                android:layout_height="150px"
+                android:layout_marginLeft="50px"
+                android:background="@drawable/btn_game_again"
+                android:gravity="center"
+                android:text=""
+                android:textColor="@color/coloer_wither"
+                android:textSize="60px"
+                />
+
+
+        </com.zhy.autolayout.AutoLinearLayout>
+
+
+        <TextView
+            android:id="@+id/tv_dialog_window_countdown"
+            android:layout_width="200px"
+            android:layout_height="200px"
+            android:layout_marginTop="50px"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="50px"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:gravity="center"
+            android:text=""
+            android:textColor="@color/coloer_wither"
+            android:textSize="200px"/>
+
+
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+</com.zhy.autolayout.AutoLinearLayout>

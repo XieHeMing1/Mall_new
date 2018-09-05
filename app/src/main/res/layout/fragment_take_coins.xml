@@ -1,0 +1,27 @@
+<com.zhy.autolayout.AutoLinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+
+    <!--fragment标题-->
+    <TextView
+        android:layout_marginLeft="50px"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="120px"
+        android:text="提取游戏币"
+        android:lines="1"/>
+
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_margin="125px"
+            android:id="@+id/rv_fg_take_coins_info"
+            android:background="@color/transparent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+</com.zhy.autolayout.AutoLinearLayout>

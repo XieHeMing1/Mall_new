@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/arl_back"
+    android:layout_width="2278px"
+    android:layout_height="4049px">
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:layout_width="2278px"
+        android:layout_height="3840px"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/iv_close"
+            android:layout_width="150px"
+            android:layout_height="150px"
+            android:background="@drawable/close"
+            android:layout_centerHorizontal="true"
+            android:layout_alignRight="@+id/all_qcode"
+            />
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:id="@+id/all_qcode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/iv_close"
+            android:layout_centerHorizontal="true"
+            android:background="@android:color/white"
+            android:orientation="vertical"
+            android:layout_marginTop="20px"
+            android:padding="30px">
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/iv_qcode"
+                android:layout_width="800px"
+                android:layout_height="800px"
+                fresco:layout_auto_baseheight="width" />
+
+            <TextView
+                android:layout_width="800px"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="扫一扫"
+                android:textColor="@android:color/black"
+                android:textSize="70px" />
+
+            <TextView
+                android:layout_width="800px"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="领取优惠"
+                android:textColor="@android:color/holo_red_light"
+                android:textSize="70px" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20px"
+                android:layout_marginTop="30px"
+                android:text="1.打开微信扫一扫。"
+                android:textColor="#858484"
+                android:textSize="70px" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20px"
+                android:text="2.到卡咪多领红包。"
+                android:textColor="#858484"
+                android:textSize="70px" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10px"
+                android:layout_marginLeft="20px"
+                android:text="3.到商家领取更多优惠。"
+                android:textColor="#858484"
+                android:textSize="70px" />
+        </com.zhy.autolayout.AutoLinearLayout>
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+</com.zhy.autolayout.AutoRelativeLayout>

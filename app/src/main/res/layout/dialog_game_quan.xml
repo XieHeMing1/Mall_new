@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="1650px"
+    android:layout_height="2400px"
+    android:background="@drawable/bg_dialog_game_win">
+
+    <TextView
+        android:id="@+id/tv_dialog_game_quan"
+        android:layout_width="850px"
+        android:layout_height="400px"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="690px"
+        android:background="@drawable/bg_dialog_game_quan"
+        android:gravity="center"
+        android:lines="1"
+        android:text=""
+        android:textColor="#FFFFFF"
+        android:textSize="120px"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_dialog_game_quan_remark"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_dialog_game_quan"
+        android:layout_centerHorizontal="true"
+        android:text="话费充值卡已存入会员账号中"
+        android:textColor="#FFFFFF"
+        android:textSize="60px"
+        android:textStyle="bold" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_dialog_game_quan_remark"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="120px"
+        android:lines="1"
+        android:text="请扫码充值"
+        android:textColor="#FFFFFF"
+        android:textSize="80px"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_dialog_game_quan_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_dialog_game_quan_remark"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="250px"
+        android:lines="1"
+        android:maxWidth="1200px"
+        android:text=""
+        android:textColor="#FFFFFF"
+        android:textSize="60px"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/tv_dialog_game_quan_img"
+        android:layout_width="500px"
+        android:layout_height="500px"
+        android:layout_below="@+id/tv_dialog_game_quan_name"
+        android:layout_marginLeft="300px"
+        android:layout_marginTop="50px"
+        android:background="@drawable/bg_dialog_game_git"
+        android:padding="50px"
+        android:src="@color/color_white" />
+
+    <ImageView
+        android:id="@+id/tv_dialog_game_quan_qrcode"
+        android:layout_width="500px"
+        android:layout_height="500px"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/tv_dialog_game_quan_name"
+        android:layout_marginRight="280px"
+        android:layout_marginTop="50px"
+        android:background="@drawable/bg_dialog_game_git"
+        android:padding="50px"
+        android:src="@color/color_white" />
+
+</com.zhy.autolayout.AutoRelativeLayout>

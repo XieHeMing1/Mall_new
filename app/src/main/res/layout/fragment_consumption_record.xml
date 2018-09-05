@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="25px"
+    android:background="@drawable/share_white_30px"
+    android:orientation="vertical">
+
+    <!-- 消费记录列表 -->
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200px"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="日期"
+            android:textColor="@color/color_black"
+            android:textSize="46px" />
+
+        <TextView
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="业务类型"
+            android:textColor="@color/color_black"
+            android:textSize="46px" />
+
+        <TextView
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="金额"
+            android:textColor="@color/color_black"
+            android:textSize="46px" />
+
+        <TextView
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="游戏币"
+            android:textColor="@color/color_black"
+            android:textSize="46px" />
+
+        <TextView
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="代币"
+            android:textColor="@color/color_black"
+            android:textSize="46px" />
+
+        <TextView
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="预存款"
+            android:textColor="@color/color_black"
+            android:textSize="50px" />
+
+        <TextView
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="彩票"
+            android:textColor="@color/color_black"
+            android:textSize="46px" />
+
+        <TextView
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="积分"
+            android:textColor="@color/color_black"
+            android:textSize="46px" />
+
+    </com.zhy.autolayout.AutoLinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:background="@color/color_black" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_consumption"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</com.zhy.autolayout.AutoLinearLayout>

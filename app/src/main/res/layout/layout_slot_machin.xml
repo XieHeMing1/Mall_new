@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="295px"
+    android:layout_height="295px"
+    fresco:layout_auto_basewidth="height|padding">
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/iv_image"
+        android:layout_width="295px"
+        android:layout_height="295px"
+        fresco:layout_auto_basewidth="height|padding"
+        android:padding="10px"
+        fresco:actualImageScaleType="fitXY"
+        />
+    <TextView
+        android:id="@+id/tv_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        fresco:layout_auto_basewidth="height|margin"
+        android:textSize="45px"
+        android:layout_alignParentRight="true"
+        android:textColor="@android:color/white"/>
+</com.zhy.autolayout.AutoRelativeLayout>

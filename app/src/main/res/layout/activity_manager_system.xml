@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/shape_coin_bg"
+    android:orientation="vertical">
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="700px">
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="300px"
+                android:layout_height="300px"
+                android:layout_gravity="center"
+                android:src="@drawable/portrait" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30px"
+                android:text="管理系统"
+                android:textColor="@color/color_blue"
+                android:textSize="70px" />
+
+        </com.zhy.autolayout.AutoLinearLayout>
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/iv_close_system"
+                android:layout_width="400px"
+                android:layout_height="90px"
+                android:layout_centerInParent="true"
+                android:clickable="true"
+                android:onClick="onClick"
+                android:src="@drawable/btn_bg_close_system"
+                android:visibility="visible" />
+
+            <ImageView
+                android:id="@+id/iv_reboot_system"
+                android:layout_width="400px"
+                android:layout_height="90px"
+                android:layout_centerInParent="true"
+                android:clickable="true"
+                android:onClick="onClick"
+                android:src="@drawable/btn_bg_reboot_system"
+                android:visibility="visible" />
+        </com.zhy.autolayout.AutoLinearLayout>
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+    <!--<View-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="1px"-->
+        <!--android:background="@color/color_black"/>-->
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200px"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/iv_manager_exception_handing"
+            android:layout_width="0px"
+            android:layout_height="100px"
+            android:layout_gravity="center"
+            android:layout_marginLeft="20px"
+            android:layout_marginRight="10px"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:src="@drawable/sel_bg_yccl_btn" />
+
+        <ImageView
+            android:id="@+id/iv_manager_shift_work"
+            android:layout_width="0px"
+            android:layout_height="100px"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10px"
+            android:layout_marginRight="10px"
+            android:layout_weight="1"
+            android:src="@drawable/sel_bg_jb_btn" />
+
+        <ImageView
+            android:id="@+id/iv_manager_clearbug"
+            android:layout_width="0px"
+            android:layout_height="100px"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10px"
+            android:layout_marginRight="10px"
+            android:layout_weight="1"
+            android:src="@drawable/btn_clearbug" />
+
+        <ImageView
+            android:id="@+id/iv_manager_exit_account"
+            android:layout_width="0px"
+            android:layout_height="100px"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10px"
+            android:layout_marginRight="20px"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:src="@drawable/out_btn" />
+
+    </com.zhy.autolayout.AutoLinearLayout>
+
+    <!--<View-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="1px"-->
+        <!--android:background="@color/color_black"/>-->
+
+    <FrameLayout
+        android:id="@+id/fl_manager_fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</com.zhy.autolayout.AutoLinearLayout>

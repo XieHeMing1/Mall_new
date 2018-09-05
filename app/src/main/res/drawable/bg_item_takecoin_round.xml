@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item   android:bottom="3px"
+            android:right="3px"
+            android:left="3px"
+        android:drawable="@drawable/bg_item_take">
+        <shape>
+            <corners android:radius="5px"/>
+            <solid android:color="#D1C3CD"/>
+        </shape>
+    </item>
+
+
+</layer-list>
+

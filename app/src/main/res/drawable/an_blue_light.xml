@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android"
+    ><!--设置是否循环播放，默认的是循环播放，false为只播放一次-->
+    <item
+        android:drawable="@drawable/ic_blue_light"
+        android:duration="500"/>
+    <item
+        android:drawable="@drawable/ic_red_light"
+        android:duration="500"/>
+    <item
+        android:drawable="@drawable/ic_yellow_light"
+        android:duration="500"/>
+
+</animation-list>

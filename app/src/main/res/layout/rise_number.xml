@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+               >
+
+    <TextView
+        android:id="@+id/rn_game_time_bg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:textColor="#999999"
+        android:text="88:88"
+        android:textSize="180px" />
+
+    <!--
+    android:shadowColor 阴影颜色
+    android:shadowDx 阴影的水平偏移量
+    android:shadowDy 阴影的垂直偏移量
+    android:shadowRadius 阴影的范围
+-->
+
+    <TextView
+        android:id="@+id/rn_game_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:textColor="#FF2A2A"
+        android:textSize="180px" />
+
+</com.zhy.autolayout.AutoRelativeLayout>

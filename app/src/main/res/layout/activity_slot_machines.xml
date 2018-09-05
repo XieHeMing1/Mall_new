@@ -1,0 +1,556 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.qy.zgz.mall.widget.AutoScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/arl_back"
+    android:layout_width="2278px"
+    android:layout_height="4049px"
+    android:background="@android:color/holo_red_dark">
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:id="@+id/al_ll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white">
+
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:layout_width="2278px"
+            android:layout_height="4049px">
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/iv_slot_top"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@+id/rl_light" />
+
+            <com.zhy.autolayout.AutoRelativeLayout
+                android:id="@+id/rl_game"
+                android:layout_width="2278px"
+                android:layout_height="4049px"
+                android:layout_alignParentBottom="true"
+                app:layout_auto_basewidth="height">
+
+                <com.facebook.drawee.view.SimpleDraweeView
+                    android:id="@+id/iv_background"
+                    android:layout_width="2278px"
+                    android:layout_height="4049px"
+                    app:actualImageScaleType="fitXY"
+                    app:layout_auto_basewidth="height" />
+
+                <!--我的奖品二维码-->
+                <ImageView
+                    android:id="@+id/iv_game_myaward"
+                    android:layout_width="1000px"
+                    android:layout_height="200px"
+                    android:layout_marginBottom="340px"
+                    android:layout_marginLeft="160px"
+                    android:layout_alignParentBottom="true"
+                    android:src="@drawable/game_my_award"
+                    android:scaleType="fitXY"
+                    />
+
+                <!--最上面的商品图-->
+                <com.zhy.autolayout.AutoLinearLayout
+                    android:id="@+id/ll_slot_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="250px"
+                    android:layout_marginTop="1050px"
+                    android:orientation="horizontal"
+                    app:layout_auto_basewidth="height|marginTop">
+
+                    <com.qy.zgz.mall.widget.SlotMachinView
+                        android:id="@+id/img1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <com.qy.zgz.mall.widget.SlotMachinView
+                        android:id="@+id/img2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <com.qy.zgz.mall.widget.SlotMachinView
+                        android:id="@+id/img3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <com.qy.zgz.mall.widget.SlotMachinView
+                        android:id="@+id/img4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        />
+
+                    <com.qy.zgz.mall.widget.SlotMachinView
+                        android:id="@+id/img5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <com.qy.zgz.mall.widget.SlotMachinView
+                        android:id="@+id/img6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </com.zhy.autolayout.AutoLinearLayout>
+
+                <!--最后面的商品图-->
+                <com.zhy.autolayout.AutoLinearLayout
+                    android:id="@+id/ll_slot_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ll_slot_1"
+                    android:orientation="vertical"
+                    android:paddingLeft="1730px">
+
+                    <com.qy.zgz.mall.widget.SlotMachinView
+                        android:id="@+id/img7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <com.qy.zgz.mall.widget.SlotMachinView
+                        android:id="@+id/img8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <com.qy.zgz.mall.widget.SlotMachinView
+                        android:id="@+id/img9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <com.qy.zgz.mall.widget.SlotMachinView
+                        android:id="@+id/img10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </com.zhy.autolayout.AutoLinearLayout>
+
+                <!--最下边的商品图-->
+                <com.zhy.autolayout.AutoLinearLayout
+                    android:id="@+id/ll_slot_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ll_slot_2"
+                    android:layout_marginLeft="250px"
+                    android:orientation="horizontal">
+
+                    <com.qy.zgz.mall.widget.SlotMachinView
+                        android:id="@+id/img16"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <com.qy.zgz.mall.widget.SlotMachinView
+                        android:id="@+id/img15"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <com.qy.zgz.mall.widget.SlotMachinView
+                        android:id="@+id/img14"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <com.qy.zgz.mall.widget.SlotMachinView
+                        android:id="@+id/img13"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <com.qy.zgz.mall.widget.SlotMachinView
+                        android:id="@+id/img12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <com.qy.zgz.mall.widget.SlotMachinView
+                        android:id="@+id/img11"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </com.zhy.autolayout.AutoLinearLayout>
+
+
+                <!--最左边的商品图-->
+                <com.zhy.autolayout.AutoLinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ll_slot_1"
+                    android:layout_marginLeft="250px"
+                    android:orientation="vertical">
+
+                    <com.qy.zgz.mall.widget.SlotMachinView
+                        android:id="@+id/img20"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <com.qy.zgz.mall.widget.SlotMachinView
+                        android:id="@+id/img19"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <com.qy.zgz.mall.widget.SlotMachinView
+                        android:id="@+id/img18"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <com.qy.zgz.mall.widget.SlotMachinView
+                        android:id="@+id/img17"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </com.zhy.autolayout.AutoLinearLayout>
+
+                <ImageView
+                    android:id="@+id/iv_exit"
+                    android:layout_width="500px"
+                    android:layout_height="360px"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginRight="435px"
+                    android:layout_marginBottom="268px"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/bg_iv_game_exit"
+                    />
+                <!--最上面的灯-->
+                <com.zhy.autolayout.AutoLinearLayout
+                    android:id="@+id/ll_light"
+                    android:layout_width="match_parent"
+                    android:layout_height="470px"
+                    android:layout_marginLeft="145px"
+                    android:layout_marginRight="145px"
+                    android:layout_marginTop="250px"
+                    android:gravity="bottom"
+                    android:orientation="horizontal"
+                    app:layout_auto_basewidth="height|marginTop">
+
+                    <com.qy.zgz.mall.widget.BlueLightView
+                        android:layout_width="0px"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        app:layout_auto_basewidth="height|marginBottom" />
+
+                    <com.qy.zgz.mall.widget.RedLightView
+                        android:layout_width="0px"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="80px"
+                        android:layout_weight="1"
+                        app:layout_auto_basewidth="height|marginBottom" />
+
+                    <com.qy.zgz.mall.widget.YellowLightView
+                        android:layout_width="0px"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="145px"
+                        android:layout_weight="1"
+                        app:layout_auto_basewidth="height|marginBottom" />
+
+                    <com.qy.zgz.mall.widget.BlueLightView
+                        android:layout_width="0px"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="195px"
+                        android:layout_weight="1"
+                        app:layout_auto_basewidth="height|marginBottom" />
+
+                    <com.qy.zgz.mall.widget.RedLightView
+                        android:layout_width="0px"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="230px"
+                        android:layout_weight="1"
+                        app:layout_auto_basewidth="height|marginBottom" />
+
+                    <com.qy.zgz.mall.widget.YellowLightView
+                        android:layout_width="0px"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="250px"
+                        android:layout_weight="1"
+                        app:layout_auto_basewidth="height|marginBottom" />
+
+                    <com.qy.zgz.mall.widget.BlueLightView
+                        android:layout_width="0px"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="260px"
+                        android:layout_weight="1"
+                        app:layout_auto_basewidth="height|marginBottom" />
+
+                    <com.qy.zgz.mall.widget.RedLightView
+                        android:layout_width="0px"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="250px"
+                        android:layout_weight="1"
+                        app:layout_auto_basewidth="height|marginBottom" />
+
+                    <com.qy.zgz.mall.widget.YellowLightView
+                        android:layout_width="0px"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="230px"
+                        android:layout_weight="1"
+                        app:layout_auto_basewidth="height|marginBottom" />
+
+                    <com.qy.zgz.mall.widget.BlueLightView
+                        android:layout_width="0px"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="195px"
+                        android:layout_weight="1"
+                        app:layout_auto_basewidth="height|marginBottom" />
+
+                    <com.qy.zgz.mall.widget.RedLightView
+                        android:layout_width="0px"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="150px"
+                        android:layout_weight="1"
+                        app:layout_auto_basewidth="height|marginBottom" />
+
+                    <com.qy.zgz.mall.widget.YellowLightView
+                        android:layout_width="0px"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="85px"
+                        android:layout_weight="1"
+                        app:layout_auto_basewidth="height|marginBottom" />
+
+                    <com.qy.zgz.mall.widget.BlueLightView
+                        android:layout_width="0px"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10px"
+                        android:layout_weight="1"
+                        app:layout_auto_basewidth="height|marginBottom" />
+
+                </com.zhy.autolayout.AutoLinearLayout>
+
+                <com.qy.zgz.mall.widget.NumberView
+                    android:id="@+id/nv_num1"
+                    android:layout_width="440px"
+                    android:layout_height="130px"
+                    android:layout_below="@+id/ll_light"
+                    android:layout_marginLeft="145px"
+                    android:layout_marginTop="60px"
+                    android:layout_toRightOf="@+id/rl_light"
+                    app:layout_auto_basewidth="height|marginTop" />
+
+                <com.qy.zgz.mall.widget.NumberView
+                    android:id="@+id/nv_num2"
+                    android:layout_width="440px"
+                    android:layout_height="130px"
+                    android:layout_below="@+id/ll_light"
+                    android:layout_marginLeft="250px"
+                    android:layout_marginTop="60px"
+                    android:layout_toRightOf="@+id/nv_num1"
+                    app:layout_auto_basewidth="height|marginTop" />
+
+                <!--最左边第一排灯-->
+                <com.zhy.autolayout.AutoRelativeLayout
+                    android:id="@+id/rl_light"
+                    android:layout_width="400px"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ll_light"
+                    android:layout_marginLeft="50px"
+                    android:orientation="horizontal"
+                    app:layout_auto_basewidth="height|marginTop">
+
+                    <com.qy.zgz.mall.widget.BlueLightView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <com.qy.zgz.mall.widget.YellowLightView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true" />
+
+                    <com.qy.zgz.mall.widget.RedLightView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true" />
+                </com.zhy.autolayout.AutoRelativeLayout>
+
+                <!--最左边第二排灯-->
+                <com.zhy.autolayout.AutoRelativeLayout
+                    android:layout_width="400px"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ll_light"
+                    android:layout_marginLeft="50px"
+                    android:layout_marginTop="100px"
+                    android:orientation="horizontal"
+                    app:layout_auto_basewidth="height|marginTop">
+
+                    <com.qy.zgz.mall.widget.RedLightView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <com.qy.zgz.mall.widget.BlueLightView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true" />
+
+                    <com.qy.zgz.mall.widget.YellowLightView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true" />
+                </com.zhy.autolayout.AutoRelativeLayout>
+
+                <!--最左边第三排灯-->
+                <com.zhy.autolayout.AutoRelativeLayout
+                    android:layout_width="400px"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/ll_light"
+                    android:layout_marginRight="50px"
+                    android:orientation="horizontal"
+                    app:layout_auto_basewidth="height|marginTop">
+
+                    <com.qy.zgz.mall.widget.YellowLightView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <com.qy.zgz.mall.widget.RedLightView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true" />
+
+                    <com.qy.zgz.mall.widget.BlueLightView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true" />
+                </com.zhy.autolayout.AutoRelativeLayout>
+
+                <!--最左边第四排灯-->
+                <com.zhy.autolayout.AutoRelativeLayout
+                    android:id="@+id/autoRelativeLayout"
+                    android:layout_width="400px"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/ll_light"
+                    android:layout_marginRight="50px"
+                    android:layout_marginTop="100px"
+                    android:orientation="horizontal"
+                    app:layout_auto_basewidth="height|marginTop">
+
+                    <com.qy.zgz.mall.widget.RedLightView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <com.qy.zgz.mall.widget.BlueLightView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true" />
+
+                    <com.qy.zgz.mall.widget.YellowLightView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true" />
+                </com.zhy.autolayout.AutoRelativeLayout>
+
+
+                <!--选择框-->
+                <ImageView
+                    android:id="@+id/iv_rotate"
+                    android:layout_width="295px"
+                    android:layout_height="295px"
+                    android:padding="5px"
+                    android:src="@drawable/ic_rotate"
+                    android:visibility="gone"
+                    app:layout_auto_basewidth="height|padding" />
+
+                <!--开始按钮-->
+                <ImageView
+                    android:id="@+id/iv_start"
+                    android:layout_width="380px"
+                    android:layout_height="380px"
+                    android:layout_below="@+id/ll_slot_3"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="70px"
+                    android:background="@drawable/sel_btn_play"
+                    app:layout_auto_basewidth="height|marginTop" />
+
+                <!--登录二维码-->
+                <com.zhy.autolayout.AutoLinearLayout
+                    android:id="@+id/ll_login_qcode"
+                    android:layout_width="1150px"
+                    android:layout_height="1150px"
+                    android:layout_below="@+id/ll_slot_1"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="25px"
+                    android:background="@drawable/bg_iv_slot_unlogin"
+                    android:orientation="vertical"
+                    app:layout_auto_basewidth="height|marginTop">
+
+                    <com.facebook.drawee.view.SimpleDraweeView
+                        android:id="@+id/iv_login_qcode"
+                        android:layout_width="470px"
+                        android:layout_height="470px"
+                        android:layout_marginTop="180px"
+                        android:layout_marginLeft="53px"
+                        app:layout_auto_basewidth="height"
+                        android:visibility="visible"/>
+
+                </com.zhy.autolayout.AutoLinearLayout>
+
+            </com.zhy.autolayout.AutoRelativeLayout>
+
+            <!--中奖奖品-->
+            <com.zhy.autolayout.AutoRelativeLayout
+                android:id="@+id/rl_award"
+                android:layout_width="2278px"
+                android:layout_height="4049px"
+                android:layout_centerInParent="true"
+                android:background="#4D000000"
+                android:visibility="gone">
+
+                <com.zhy.autolayout.AutoRelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="500px">
+
+                    <com.facebook.drawee.view.SimpleDraweeView
+                        android:id="@+id/iv_circle"
+                        android:layout_width="2278px"
+                        android:layout_height="1928px"
+                        app:actualImageScaleType="fitXY"
+                        app:layout_auto_basewidth="height"  />
+
+                    <com.facebook.drawee.view.SimpleDraweeView
+                        android:id="@+id/iv_award"
+                        android:layout_width="2278px"
+                        android:layout_height="2029px"
+                        app:actualImageScaleType="fitXY"
+                        app:layout_auto_basewidth="height"  />
+
+                    <TextView
+                        android:id="@+id/tv_award"
+                        android:layout_width="960px"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="1650px"
+                        android:text="3券"
+                        android:gravity="center"
+                        android:layout_toRightOf="@+id/iv_qcode"
+                        android:textColor="@android:color/black"
+                        app:layout_auto_basewidth="height|marginTop"
+                        android:textSize="100px" />
+
+
+                    <com.facebook.drawee.view.SimpleDraweeView
+                        android:id="@+id/iv_qcode"
+                        android:layout_width="400px"
+                        android:layout_height="400px"
+                        android:layout_marginTop="1400px"
+                        android:layout_marginLeft="450px"
+                        app:layout_auto_basewidth="height|marginTop" />
+                    <TextView
+                        android:layout_width="400px"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:layout_marginTop="1760px"
+                        android:layout_marginLeft="450px"
+                        android:text="扫码领取"
+                        android:textColor="@android:color/holo_red_dark"
+                        android:textSize="80px"
+                        app:layout_auto_basewidth="height|marginTop"/>
+                    <com.facebook.drawee.view.SimpleDraweeView
+                        android:id="@+id/iv_an_award"
+                        android:layout_width="1116px"
+                        android:layout_height="774px"
+                        android:layout_marginTop="100px"
+                        android:layout_marginLeft="150px"
+                        app:actualImageScaleType="fitXY"/>
+                    <ImageView
+                        android:id="@+id/tv_close"
+                        android:layout_width="150px"
+                        android:layout_height="150px"
+                        android:background="@drawable/close"
+                        android:layout_centerHorizontal="true"
+                        android:layout_below="@+id/iv_award"
+                        />
+                </com.zhy.autolayout.AutoRelativeLayout>
+
+            </com.zhy.autolayout.AutoRelativeLayout>
+        </com.zhy.autolayout.AutoRelativeLayout>
+    </com.zhy.autolayout.AutoLinearLayout>
+</com.qy.zgz.mall.widget.AutoScrollView>

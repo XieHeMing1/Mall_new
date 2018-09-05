@@ -1,0 +1,5 @@
+tinkerId = "cran-2.1"
+tinkerId = "cranpath-2.1.0"
+app-1223-14-52-54
+version=3
+请使用duomi这个签名文件 密码为qyhoot.com

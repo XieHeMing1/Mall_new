@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_game_prize_background">
+
+    <!--<com.example.mylock.DynamicLock.SnowView.SnowView-->
+        <!--android:id="@+id/snow_view"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--/>-->
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/wrv_prize"
+            android:layout_marginTop="450px"
+            android:layout_width="match_parent"
+            android:paddingTop="180px"
+            android:paddingBottom="50px"
+            android:paddingLeft="340px"
+            android:paddingRight="300px"
+            android:layout_height="2150px"
+           />
+
+    <Button
+        android:id="@+id/btn_start"
+        android:layout_width="400px"
+        android:layout_height="400px"
+        android:layout_marginRight="310px"
+        android:textColor="#ffffffff"
+        android:text="开始"
+        android:textSize="100px"
+        android:textStyle="bold"
+        android:layout_below="@+id/wrv_prize"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/bg_game_prize_start"
+        android:onClick="onClick"/>
+
+
+    <com.qy.zgz.mall.lcb_game.RiseNumberTextView
+        android:id="@+id/rntv_num_dance"
+        android:layout_width="550px"
+        android:layout_height="400px"
+        android:layout_below="@+id/wrv_prize"
+        android:layout_toLeftOf="@id/btn_start"
+        android:layout_marginRight="20px"
+        android:background="@drawable/bg_game_prize_time"
+        android:textColor="@color/circleblue"/>
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:layout_marginTop="50px"
+        android:layout_marginRight="50px"
+        android:id="@+id/arl_introduce"
+        android:layout_width="wrap_content"
+        android:layout_below="@+id/wrv_prize"
+        android:layout_toLeftOf="@id/rntv_num_dance"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="130px"
+            android:text="10秒挑战"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_marginTop="180px"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="70px"
+            android:text="量贩式礼品免费拿"
+            android:textColor="#FFE511"
+            android:textStyle="bold"/>
+
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+
+
+
+    <TextView
+        android:id="@+id/tv_game_prize_remark"
+        android:layout_width="1600px"
+        android:layout_height="500px"
+        android:layout_below="@+id/rntv_num_dance"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="250px"
+        android:textSize="60px"
+        android:textColor="#FFFFFF"
+       />
+
+    <Button
+        android:id="@+id/btn_game_exit"
+        android:layout_width="650px"
+        android:layout_height="180px"
+        android:textColor="#ffffff"
+        android:text="退出"
+        android:background="@drawable/bg_game_prize_exit"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="50px"
+        android:textSize="80px"
+        android:onClick="onClick"/>
+
+
+</com.zhy.autolayout.AutoRelativeLayout>

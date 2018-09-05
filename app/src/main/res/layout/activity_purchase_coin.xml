@@ -1,0 +1,401 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_white">
+
+    <include
+        android:id="@+id/title_banner"
+        layout="@layout/layout_title_banner" />
+
+    <View
+        android:id="@+id/v_buy_coins_clean_error"
+        android:layout_width="100px"
+        android:layout_height="100px"
+        android:layout_alignParentLeft="true"
+        android:background="@color/transparent"
+        android:clickable="true"
+        android:longClickable="true" />
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:id="@+id/ll_purchase_center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/view_line"
+        android:layout_below="@+id/title_banner"
+        android:orientation="horizontal">
+
+        <!-- 左边选项卡 -->
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="600px"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginTop="100px"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="450px"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="90px"
+                android:layout_marginRight="90px"
+                android:gravity="center"
+                android:text="购币取币"
+                android:textColor="@color/color_black"
+                android:textSize="90px" />
+
+            <ImageView
+                android:id="@+id/iv_wx_qrcode"
+                android:layout_width="450px"
+                android:layout_height="450px"
+                android:layout_marginBottom="30px"
+                android:layout_marginLeft="90px"
+                android:layout_marginRight="90px"
+                android:layout_marginTop="30px"
+                android:background="@drawable/shape_qr_code" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="扫二维码登录会员"
+                android:textColor="@color/color_black"
+                android:textSize="70px" />
+
+            <ImageView
+                android:id="@+id/rl_purchase_coin"
+                android:layout_width="match_parent"
+                android:layout_height="220px"
+                android:layout_marginTop="100px"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:src="@drawable/ic_purchase_coin_tab"></ImageView>
+
+            <ImageView
+                android:id="@+id/rl_exchange_coin"
+                android:layout_width="match_parent"
+                android:layout_height="220px"
+                android:layout_marginTop="70px"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:src="@drawable/ic_exchange_coin_tab">
+
+                <!--<TextView-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:gravity="center"-->
+                <!--android:text="提币"-->
+                <!--android:textColor="@color/color_white"-->
+                <!--android:textSize="70px" />-->
+            </ImageView>
+
+            <ImageView
+                android:id="@+id/rl_consumption_records"
+                android:layout_width="match_parent"
+                android:layout_height="220px"
+                android:layout_marginTop="70px"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:src="@drawable/ic_consumption_records_tab">
+
+                <!--<TextView-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:gravity="center"-->
+                <!--android:text="消费记录"-->
+                <!--android:textColor="@color/color_white"-->
+                <!--android:textSize="70px" />-->
+            </ImageView>
+
+            <ImageView
+                android:id="@+id/rl_modify_password"
+                android:layout_width="match_parent"
+                android:layout_height="220px"
+                android:layout_marginTop="70px"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:src="@drawable/ic_modify_pwd_tab">
+
+                <!--<TextView-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:gravity="center"-->
+                <!--android:text="修改密码"-->
+                <!--android:textColor="@color/color_white"-->
+                <!--android:textSize="70px" />-->
+            </ImageView>
+
+            <ImageView
+                android:id="@+id/iv_logout"
+                android:layout_width="match_parent"
+                android:layout_height="220px"
+                android:layout_marginTop="70px"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:src="@drawable/ic_logout_tab">
+
+                <!--<TextView-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:gravity="center"-->
+                <!--android:text="退出账号"-->
+                <!--android:textColor="@color/color_white"-->
+                <!--android:textSize="70px" />-->
+            </ImageView>
+        </com.zhy.autolayout.AutoLinearLayout>
+
+        <View
+            android:layout_width="2px"
+            android:layout_height="match_parent"
+            android:background="@color/color_black" />
+
+
+        <!--右边显示界面-->
+        <com.zhy.autolayout.AutoLinearLayout
+            android:id="@+id/ll_right_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <com.zhy.autolayout.AutoRelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="100px"
+                android:layout_marginTop="50px">
+
+                <TextView
+                    android:id="@+id/tv_purchase_coin_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="100px"
+                    android:layout_marginLeft="90px"
+                    android:layout_marginRight="90px"
+                    android:layout_alignParentLeft="true"
+                    android:gravity="center|left"
+                    android:text="选择套餐"
+                    android:textColor="@color/color_black"
+                    android:textSize="90px" />
+
+                <ImageView
+                    android:id="@+id/iv_manager_setting"
+                    android:layout_width="100px"
+                    android:layout_height="100px"
+                    android:layout_gravity="right"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="90px"
+                    android:layout_marginRight="90px"
+                    android:src="@drawable/ic_setting"/>
+
+            </com.zhy.autolayout.AutoRelativeLayout>
+
+
+            <TextView
+                android:id="@+id/txt_timer_count"
+                android:layout_width="match_parent"
+                android:layout_height="100px"
+                android:layout_marginLeft="90px"
+                android:layout_marginRight="90px"
+                android:layout_marginTop="30px"
+                android:gravity="center"
+                android:text="倒计时：00:00"
+                android:textColor="@color/color_black"
+                android:textSize="80px" />
+
+
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="2300px"
+                android:layout_marginLeft="60px"
+                android:layout_marginRight="60px"
+                android:layout_marginTop="50px"
+                android:background="@drawable/shape_coin_bg">
+
+                <FrameLayout
+                    android:id="@+id/fl_fragment_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+                <!-- 修改密码 -->
+                <com.zhy.autolayout.AutoLinearLayout
+                    android:id="@+id/ll_modify_pwd_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="30px"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <com.zhy.autolayout.AutoLinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="50px"
+                        android:layout_marginRight="100px"
+                        android:layout_marginTop="150px"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="请输入您的密码："
+                            android:textColor="@color/color_black"
+                            android:textSize="60px" />
+
+                        <EditText
+                            android:id="@+id/et_pwdupdate_oldpwd"
+                            android:layout_width="match_parent"
+                            android:layout_height="200px"
+                            android:layout_marginLeft="100px"
+                            android:background="@drawable/share_white"
+                            android:gravity="center_vertical"
+                            android:inputType="numberPassword"
+                            android:maxLength="6"
+                            android:paddingLeft="50px"
+                            android:paddingRight="50px"
+                            android:textColor="@color/color_black"
+                            android:textSize="60px" />
+
+
+                    </com.zhy.autolayout.AutoLinearLayout>
+
+                    <com.zhy.autolayout.AutoLinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="50px"
+                        android:layout_marginRight="100px"
+                        android:layout_marginTop="50px"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="150px"
+                            android:ellipsize="end"
+                            android:lines="2"
+                            android:maxEms="19"
+                            android:text="如果忘记密码，请到前台工作人员处查询。"
+                            android:textColor="@color/color_green"
+                            android:textSize="80px" />
+
+                    </com.zhy.autolayout.AutoLinearLayout>
+
+                    <com.zhy.autolayout.AutoLinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="50px"
+                        android:layout_marginRight="100px"
+                        android:layout_marginTop="150px"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="请输入您的新密码："
+                            android:textColor="@color/color_black"
+                            android:textSize="60px" />
+
+                        <EditText
+                            android:id="@+id/et_pwdupdate_npwd"
+                            android:layout_width="match_parent"
+                            android:layout_height="200px"
+                            android:layout_marginLeft="100px"
+                            android:background="@drawable/share_white"
+                            android:gravity="center_vertical"
+                            android:inputType="numberPassword"
+                            android:maxLength="6"
+                            android:paddingLeft="50px"
+                            android:paddingRight="50px"
+                            android:textColor="@color/color_black"
+                            android:textSize="60px" />
+
+
+                    </com.zhy.autolayout.AutoLinearLayout>
+
+                    <com.zhy.autolayout.AutoLinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="50px"
+                        android:layout_marginRight="100px"
+                        android:layout_marginTop="100px"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="请确认您的新密码："
+                            android:textColor="@color/color_black"
+                            android:textSize="60px" />
+
+                        <EditText
+                            android:id="@+id/et_pwdupdate_cpwd"
+                            android:layout_width="match_parent"
+                            android:layout_height="200px"
+                            android:layout_marginLeft="100px"
+                            android:background="@drawable/share_white"
+                            android:gravity="center_vertical"
+                            android:inputType="numberPassword"
+                            android:maxLength="6"
+                            android:paddingLeft="50px"
+                            android:paddingRight="50px"
+                            android:textColor="@color/color_black"
+                            android:textSize="60px" />
+
+                    </com.zhy.autolayout.AutoLinearLayout>
+
+                    <com.zhy.autolayout.AutoLinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="150px"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/btn_pwdupdate_cancel"
+                            android:layout_width="400px"
+                            android:layout_height="150px"
+                            android:background="@drawable/share_white"
+                            android:gravity="center"
+                            android:text="取消"
+                            android:textColor="#01AAEE"
+                            android:textSize="60px"
+                            android:textStyle="bold" />
+
+                        <Button
+                            android:id="@+id/btn_pwdupdate_confirm"
+                            android:layout_width="400px"
+                            android:layout_height="150px"
+                            android:layout_marginLeft="300px"
+                            android:background="@drawable/share_white"
+                            android:gravity="center"
+                            android:text="确认更改"
+                            android:textColor="#01AAEE"
+                            android:textSize="60px"
+                            android:textStyle="bold" />
+
+                    </com.zhy.autolayout.AutoLinearLayout>
+
+                </com.zhy.autolayout.AutoLinearLayout>
+
+            </com.zhy.autolayout.AutoLinearLayout>
+
+        </com.zhy.autolayout.AutoLinearLayout>
+
+    </com.zhy.autolayout.AutoLinearLayout>
+
+    <View
+        android:id="@+id/view_line"
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:layout_above="@+id/layout_common_bottom"
+        android:background="@color/color_black" />
+
+    <include
+        android:id="@+id/layout_common_bottom"
+        layout="@layout/layout_common_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"></include>
+
+    <!--<com.facebook.drawee.view.SimpleDraweeView-->
+    <!--android:id="@+id/sdv_customor_enquiry"-->
+    <!--android:layout_width="500px"-->
+    <!--android:layout_height="180px"-->
+    <!--android:layout_alignParentRight="true"-->
+    <!--android:layout_marginTop="2800px" />-->
+</com.zhy.autolayout.AutoRelativeLayout>

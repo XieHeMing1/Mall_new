@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+>
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:id="@+id/rl_package_info"
+        android:layout_width="match_parent"
+        android:layout_height="600px"
+        android:layout_marginBottom="50px"
+        android:layout_marginLeft="12px"
+        android:layout_marginRight="13px"
+        android:layout_marginTop="50px"
+        android:background="@drawable/ic_coin_10">
+
+    <!--<com.facebook.drawee.view.SimpleDraweeView-->
+        <!--android:id="@+id/sdv_coin_item"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="600px"-->
+        <!--android:layout_marginBottom="50px"-->
+        <!--android:layout_marginLeft="12px"-->
+        <!--android:layout_marginRight="13px"-->
+        <!--android:layout_marginTop="50px" />-->
+    <TextView
+        android:id="@+id/tv_coin_count"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="110px"
+        android:textStyle="bold"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:text="10币"
+        android:paddingBottom="100px"
+        android:textColor="@color/color_white"/>
+
+    <TextView
+        android:id="@+id/tv_package_price"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="65px"
+        android:text="￥10.00"
+        android:paddingBottom="60px"
+        android:layout_alignParentBottom="true"
+        android:textColor="@color/color_red"/>
+
+    </com.zhy.autolayout.AutoRelativeLayout>
+</com.zhy.autolayout.AutoLinearLayout>

@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+    
+   <com.zhy.autolayout.AutoLinearLayout
+       android:id="@+id/all_exception_handing_all"
+       android:layout_width="2078px"
+       android:layout_height="wrap_content"
+       android:paddingTop="15px"
+       android:paddingBottom="15px"
+       android:clickable="true"
+       android:gravity="center_vertical"
+       android:orientation="horizontal">
+
+
+       <com.zhy.autolayout.AutoRelativeLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_weight="1"
+           >
+       
+       <TextView
+           android:id="@+id/tv_exception_handing_date"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:gravity="center"
+           android:layout_centerInParent="true"
+           android:textSize="45px"
+           android:lines="2"
+           android:ellipsize="end"
+           android:text=""
+           android:maxEms="10"/>
+       </com.zhy.autolayout.AutoRelativeLayout>
+
+       <com.zhy.autolayout.AutoRelativeLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_weight="1"
+           >
+       <TextView
+           android:id="@+id/tv_exception_handing_error_msg"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:gravity="center"
+           android:layout_centerInParent="true"
+           android:text=""
+           android:textSize="45px"
+           android:lines="1"
+          />
+
+       </com.zhy.autolayout.AutoRelativeLayout>
+
+       <com.zhy.autolayout.AutoRelativeLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_weight="1"
+           >
+
+       <TextView
+           android:id="@+id/tv_exception_handing_custname"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:gravity="center"
+            android:layout_centerInParent="true"
+           android:layout_marginLeft="20px"
+           android:textSize="45px"
+           android:lines="1"
+           />
+       </com.zhy.autolayout.AutoRelativeLayout>
+
+       <com.zhy.autolayout.AutoRelativeLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_weight="1"
+           >
+       <TextView
+           android:id="@+id/tv_exception_handing_orderstatus"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:gravity="center"
+          android:layout_centerInParent="true"
+           android:layout_marginLeft="20px"
+           android:textSize="45px"
+           android:lines="1"
+           />
+       </com.zhy.autolayout.AutoRelativeLayout>
+
+       <com.zhy.autolayout.AutoRelativeLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_weight="1"
+           >
+
+       <TextView
+           android:id="@+id/tv_exception_handing_ordernum"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:gravity="center"
+           android:layout_centerInParent="true"
+           android:layout_marginLeft="20px"
+           android:textSize="45px"
+           android:lines="3"
+           />
+
+       </com.zhy.autolayout.AutoRelativeLayout>
+       <com.zhy.autolayout.AutoRelativeLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_weight="1"
+           >
+       <TextView
+           android:id="@+id/tv_exception_handing_amount"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:gravity="center"
+           android:layout_centerInParent="true"
+           android:layout_marginLeft="20px"
+           android:textSize="45px"
+           android:lines="1"
+           />
+
+       </com.zhy.autolayout.AutoRelativeLayout>
+       <com.zhy.autolayout.AutoRelativeLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_weight="1"
+           >
+       <TextView
+           android:id="@+id/tv_exception_handing_withoutcoin"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_centerInParent="true"
+           android:text=""
+           android:layout_marginLeft="20px"
+           android:textSize="45px"
+           android:lines="1"
+           />
+       </com.zhy.autolayout.AutoRelativeLayout>
+
+
+   </com.zhy.autolayout.AutoLinearLayout>
+
+
+</com.zhy.autolayout.AutoLinearLayout>

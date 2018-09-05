@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/transparent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:layout_width="1200px"
+        android:layout_height="2170px"
+        android:background="@drawable/bg_game_award_success"
+        android:orientation="vertical">
+
+        <!--倒计时-->
+        <!--<com.qy.zgz.kamiduonew.widget.CircleTextProgressbar-->
+        <!--android:id="@+id/ctp_dialog_game_success_countdown"-->
+        <!--android:layout_width="300px"-->
+        <!--android:layout_height="300px"-->
+        <!--android:layout_marginTop="50px"-->
+        <!--android:layout_marginRight="50px"-->
+        <!--android:layout_alignParentRight="true"-->
+        <!--android:onClick="onClick"-->
+        <!--android:textColor="@color/color_blue"-->
+        <!--android:textSize="120px"-->
+        <!--android:text=""/>-->
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/dialog_tis_game_success_awardimg"
+            android:layout_width="300px"
+            android:layout_height="300px"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="850px"
+            android:scaleType="fitXY" />
+
+
+        <ImageView
+            android:id="@+id/dialog_tis_game_success_qrcode"
+            android:layout_width="260px"
+            android:layout_height="260px"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="1620px" />
+
+
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:id="@+id/all_dialog_game_success_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="60px"
+            android:paddingLeft="50px"
+            android:paddingRight="50px">
+
+            <Button
+                android:id="@+id/btn_dialog_game_success_no"
+                android:layout_width="350px"
+                android:layout_height="120px"
+                android:background="@drawable/btn_game_go"
+                android:gravity="center"
+                android:text=""
+                android:textColor="@color/coloer_wither"
+                android:textSize="60px" />
+
+            <Button
+                android:id="@+id/btn_dialog_game_success_yes"
+                android:layout_width="350px"
+                android:layout_height="120px"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/btn_game_again"
+                android:gravity="center"
+                android:text=""
+                android:textColor="@color/coloer_wither"
+                android:textSize="60px" />
+
+
+        </com.zhy.autolayout.AutoRelativeLayout>
+
+
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+
+</com.zhy.autolayout.AutoLinearLayout>

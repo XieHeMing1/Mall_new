@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/arl_back"
+    android:layout_width="2278px"
+    android:layout_height="4049px">
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:id="@+id/rl_image"
+        android:layout_width="2278px"
+        android:layout_height="3840px"
+        android:gravity="center"
+        >
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rlv_max"
+            android:layout_width="1658px"
+            android:layout_height="2313px"
+            android:layout_below="@+id/arl_tv_close"/>
+
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:id="@+id/arl_tv_close"
+            android:layout_width="1658px"
+            android:orientation="vertical"
+            android:layout_marginTop="150px"
+            android:background="#f2f2f2"
+            android:paddingTop="20px"
+            android:paddingLeft="20px"
+            android:paddingRight="20px"
+            android:paddingBottom="20px"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/tv_close"
+                android:layout_width="120px"
+                android:layout_height="120px"
+                android:background="@drawable/x"
+               android:layout_alignParentRight="true"
+                />
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:id="@+id/ll_detail"
+            android:layout_width="1658px"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            >
+            <!-- android:background="@android:color/white"-->
+            <com.zhy.autolayout.AutoLinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/iv_qcode"
+                android:layout_width="500px"
+                android:layout_height="500px"
+                android:layout_gravity="center_horizontal"
+                fresco:layout_auto_baseheight="width"
+                />
+
+                <TextView
+                    android:layout_width="500px"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/color_grey"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:text="打开微信扫一扫"
+                    android:ellipsize="end"
+                    android:textSize="60px"/>
+
+            </com.zhy.autolayout.AutoLinearLayout>
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:layout_marginLeft="20px"
+                android:layout_width="600px"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+
+            <TextView
+                android:id="@+id/tv_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/black"
+                android:gravity="left"
+                android:maxLines="3"
+                android:ellipsize="end"
+                android:textSize="60px"/>
+            <TextView
+                android:layout_marginTop="25px"
+                android:id="@+id/tv_scan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="扫一扫"
+                android:lines="1"
+                android:ellipsize="end"
+                android:textColor="@android:color/holo_red_light"
+                android:gravity="center"
+                android:textSize="60px"/>
+
+            <com.zhy.autolayout.AutoRelativeLayout
+                android:layout_marginTop="10px"
+                android:layout_width="match_parent"
+                android:layout_height="100px"
+               >
+
+                <Button
+                    android:id="@+id/btn_max_image_addcar"
+                    android:layout_width="290px"
+                    android:layout_height="match_parent"
+                    android:text="加入购物车"
+                    android:textColor="@color/coloer_wither"
+                    android:gravity="center"
+                    android:background="@drawable/shape_green_left_15px"
+                    android:textSize="40px"
+                    android:ellipsize="end"
+                    android:layout_alignParentLeft="true"
+                    android:lines="1"
+                    />
+
+                <Button
+                    android:id="@+id/btn_max_image_buy_now"
+                    android:layout_width="290px"
+                    android:layout_height="match_parent"
+                    android:text="立即兑换"
+                    android:background="@drawable/shape_green_right_15px"
+                    android:textColor="@color/coloer_wither"
+                    android:gravity="center"
+                    android:textSize="40px"
+                    android:ellipsize="end"
+                    android:layout_alignParentRight="true"
+                    android:lines="1"
+                    />
+
+            </com.zhy.autolayout.AutoRelativeLayout>
+            </com.zhy.autolayout.AutoLinearLayout>
+        </com.zhy.autolayout.AutoLinearLayout>
+
+        </com.zhy.autolayout.AutoRelativeLayout>
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+</com.zhy.autolayout.AutoRelativeLayout>

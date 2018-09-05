@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.qy.zgz.mall.vbar.VbarActivity">
+
+
+    <Button
+        android:id="@+id/openDev"
+        android:layout_width="100dip"
+        android:layout_height="40dip"
+        android:onClick="onClick"
+        android:text="打开设备" />
+
+    <Button
+        android:text="开始解码"
+        android:layout_width="100dip"
+        android:layout_height="40dip"
+        android:onClick="onClick"
+        android:id="@+id/begindecode" />
+
+    <Button
+        android:text="关闭设备"
+        android:layout_width="100dip"
+        android:layout_height="40dip"
+        android:onClick="onClick"
+        android:id="@+id/closedev" />
+
+
+</com.zhy.autolayout.AutoLinearLayout>

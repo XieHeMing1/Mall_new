@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="1650px"
+    android:layout_height="1650px"
+    android:background="@drawable/bg_dialog_game_login">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="250px"
+        android:text="请扫码登录"
+        android:textColor="#FFFFFF"
+        android:textSize="150px"
+        android:textStyle="bold" />
+
+
+    <ImageView
+        android:id="@+id/tv_dialog_game_login_qrcode"
+        android:layout_width="700px"
+        android:layout_height="700px"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="550px"
+        android:background="@drawable/bg_dialog_game_git"
+        android:padding="50px"
+        android:src="@color/color_white" />
+
+</com.zhy.autolayout.AutoRelativeLayout>

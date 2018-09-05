@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.qy.zgz.mall"
+          android:excludeFromRecents="true">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+
+    <!-- 往sdcard中写入数据的权限 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <!-- 在sdcard中创建/删除文件的权限 -->
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+
+    <!-- <uses-permission android:name="android.permission.INSTALL_PACKAGES" /> -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.READ_LOGS"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+
+
+    <uses-permission android:name="android.permission.RESTART_PACKAGES"/>
+
+    <!-- 获取手机录音机使用权限，听写、识别、语义理解需要用到此权限 -->
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+
+    <application
+        android:name=".MyApplication"
+        android:allowBackup="true"
+        android:hardwareAccelerated="false"
+        android:icon="@mipmap/ic_huanyou"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@mipmap/ic_huanyou"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme.NoActionBar">
+        <activity
+            android:name=".page.login.LoginActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+                <category android:name="android.intent.category.HOME"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <!-- <activity -->
+        <!-- android:name=".page.login.LoginActivity" -->
+        <!-- android:theme="@style/AppTheme.NoActionBar"></activity> -->
+        <activity
+            android:name=".page.index.MallActivity"
+            android:launchMode="singleTask"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustNothing"/>
+        <activity
+            android:name=".page.max.MaxImageActivity"
+            android:launchMode="singleTask"
+            android:theme="@style/dialogstyle"/>
+        <activity
+            android:name=".page.red_packet.RedPacketActivity"
+            android:launchMode="singleTask"
+            android:theme="@style/dialogstyle"/>
+
+        <meta-data
+            android:name="design_width"
+            android:value="2278"/>
+        <meta-data
+            android:name="design_height"
+            android:value="4049"/>
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.qy.zgz.mall.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+
+            <!-- 元数据 -->
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths"/>
+        </provider>
+
+        <service
+            android:name=".service.AutoInstallAccessibilityService"
+            android:enabled="true"
+            android:exported="true"
+            android:label="@string/accessibility_service_description"
+            android:permission="android.permission.BIND_ACCESSIBILITY_SERVICE">
+            <intent-filter>
+                <action android:name="android.accessibilityservice.AccessibilityService"/>
+            </intent-filter>
+
+            <meta-data
+                android:name="android.accessibilityservice"
+                android:resource="@xml/accessibility_service_config"/>
+        </service>
+
+        <activity android:name=".vbar.VbarActivity">
+        </activity>
+        <activity
+            android:name=".page.index_function.IndexFuncitonActivity"
+            android:launchMode="singleInstance"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+        <activity
+            android:name=".slot_machines.game.SlotMachinesActivity"
+            android:launchMode="singleTask"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity
+            android:name=".slot_machines.SlotActivity"
+            android:launchMode="singleTask"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity
+            android:name=".page.money_purchase.BuyCoinsActivity"
+            android:launchMode="singleInstance"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity
+            android:name=".page.setting.SettingHostActivity"
+            android:launchMode="singleTask"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+        <activity android:name=".page.money_purchase.error_handle.ErrorHandleActivity"
+                  android:launchMode="singleTask"
+                  android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+        <!--<activity android:name=".page.index.MallMainActivity"-->
+            <!--android:launchMode="singleTask"></activity>-->
+        <activity android:name=".page.index.HomePageActivity"
+            android:launchMode="singleTask"></activity>
+        <activity android:name=".page.index.VIPCenterActivity"
+            android:launchMode="singleTask"></activity>
+        <activity android:name=".page.index.PurchaseCoinActivity"
+            android:launchMode="singleTask"></activity>
+        <activity android:name="com.qy.zgz.mall.lcb_game.NumDanceActivity"
+            android:launchMode="singleTask"></activity>
+    </application>
+
+</manifest>

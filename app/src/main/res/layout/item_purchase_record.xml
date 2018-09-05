@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+    
+   <com.zhy.autolayout.AutoLinearLayout
+       android:layout_width="2078px"
+       android:layout_height="wrap_content"
+       android:paddingTop="50px"
+       android:paddingBottom="50px"
+       android:gravity="center_vertical"
+       android:orientation="horizontal">
+
+
+       <com.zhy.autolayout.AutoRelativeLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_weight="1"
+           >
+       
+       <TextView
+           android:id="@+id/tv_purchase_record_date"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:gravity="center"
+           android:layout_centerInParent="true"
+           android:textSize="46px"
+           android:lines="2"
+           android:ellipsize="end"
+           android:text=""
+           android:maxEms="10"/>
+       </com.zhy.autolayout.AutoRelativeLayout>
+
+       <com.zhy.autolayout.AutoRelativeLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_weight="1"
+           >
+       <TextView
+           android:id="@+id/tv_purchase_record_type"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:gravity="center"
+           android:layout_centerInParent="true"
+           android:text=""
+           android:textSize="46px"
+           android:lines="1"
+          />
+
+       </com.zhy.autolayout.AutoRelativeLayout>
+
+       <com.zhy.autolayout.AutoRelativeLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_weight="1"
+           >
+
+       <TextView
+           android:id="@+id/tv_purchase_record_price"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:gravity="center"
+            android:layout_centerInParent="true"
+           android:layout_marginLeft="20px"
+           android:textSize="46px"
+           android:lines="1"
+           />
+       </com.zhy.autolayout.AutoRelativeLayout>
+
+       <com.zhy.autolayout.AutoRelativeLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_weight="1"
+           >
+       <TextView
+           android:id="@+id/tv_purchase_record_coins"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:gravity="center"
+          android:layout_centerInParent="true"
+           android:layout_marginLeft="20px"
+           android:textSize="46px"
+           android:lines="1"
+           />
+       </com.zhy.autolayout.AutoRelativeLayout>
+
+       <com.zhy.autolayout.AutoRelativeLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_weight="1"
+           >
+
+       <TextView
+           android:id="@+id/tv_purchase_record_recoins"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:gravity="center"
+           android:layout_centerInParent="true"
+           android:layout_marginLeft="20px"
+           android:textSize="46px"
+           android:lines="1"
+           />
+
+       </com.zhy.autolayout.AutoRelativeLayout>
+       <com.zhy.autolayout.AutoRelativeLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_weight="1"
+           >
+       <TextView
+           android:id="@+id/tv_purchase_record_deposit"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:gravity="center"
+           android:layout_centerInParent="true"
+           android:layout_marginLeft="20px"
+           android:textSize="46px"
+           android:lines="1"
+           />
+
+       </com.zhy.autolayout.AutoRelativeLayout>
+       <com.zhy.autolayout.AutoRelativeLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_weight="1"
+           >
+       <TextView
+           android:id="@+id/tv_purchase_record_ticket"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_centerInParent="true"
+           android:text=""
+           android:layout_marginLeft="20px"
+           android:textSize="46px"
+           android:lines="1"
+           />
+       </com.zhy.autolayout.AutoRelativeLayout>
+
+       <com.zhy.autolayout.AutoRelativeLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_weight="1"
+           >
+       <TextView
+           android:id="@+id/tv_purchase_record_point"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:gravity="center"
+           android:layout_centerInParent="true"
+           android:layout_marginLeft="20px"
+           android:textSize="46px"
+           android:lines="1"
+           />
+       </com.zhy.autolayout.AutoRelativeLayout>
+   </com.zhy.autolayout.AutoLinearLayout>
+
+
+</com.zhy.autolayout.AutoLinearLayout>

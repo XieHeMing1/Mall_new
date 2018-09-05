@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoRelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#EEEEEE"
+    tools:context="com.qy.zgz.mall.page.setting.SettingHostActivity">
+
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="100px"
+            android:textColor="@color/color_black"
+            android:text="域名修改"/>
+
+        <TextView
+            android:layout_marginTop="50px"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="80px"
+            android:textColor="@color/color_black"
+            android:text="例如: http://www.baidu.com/"/>
+
+
+        <EditText
+            android:id="@+id/et_setting_host_hostname"
+            android:layout_marginTop="50px"
+            android:layout_width="800px"
+            android:layout_height="100px"
+            android:textSize="80px"
+            android:text=""
+            android:gravity="center"
+            android:background="@drawable/share_white"
+            android:textColor="@color/color_black"/>
+
+        <Button
+            android:layout_marginTop="50px"
+            android:id="@+id/btn_setting_host_yes"
+            android:layout_width="300px"
+            android:layout_height="150px"
+            android:textSize="60px"
+            android:gravity="center"
+            android:text="确定"
+            />
+    </com.zhy.autolayout.AutoLinearLayout>
+
+
+</com.zhy.autolayout.AutoRelativeLayout>

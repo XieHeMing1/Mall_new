@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_coin_type"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/sdv_coin_item"
+        android:layout_width="match_parent"
+        android:layout_height="600px"
+        android:layout_marginBottom="50px"
+        android:layout_marginLeft="12px"
+        android:layout_marginRight="13px"
+        android:layout_marginTop="50px" />
+
+</com.zhy.autolayout.AutoRelativeLayout>

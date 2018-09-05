@@ -1,0 +1,49 @@
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:orientation="vertical"
+             tools:context="com.qy.zgz.mall.page.money_purchase.BuyCoinsFragment">
+
+
+    <!--fragment标题-->
+    <TextView
+        android:layout_marginLeft="50px"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="120px"
+        android:text="购买套餐"
+        android:lines="1"/>
+
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100px"
+        android:layout_marginLeft="50px"
+        android:layout_marginRight="50px"
+        android:layout_marginBottom="50px"
+        android:padding="50px"
+        android:background="@drawable/share_white"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_fg_buy_coins_info"
+            android:background="#FDFBFC"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/tv_fg_buy_coins_notaocan_tis"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="80px"
+            android:textColor="@color/color_black"
+            android:visibility="gone"
+            android:text="此等级没有套餐，请联系前台!"/>
+
+
+    </com.zhy.autolayout.AutoLinearLayout>
+
+
+</com.zhy.autolayout.AutoLinearLayout>

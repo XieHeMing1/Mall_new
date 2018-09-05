@@ -1,0 +1,494 @@
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:orientation="vertical"
+             tools:context="com.qy.zgz.mall.page.fragment.BalanceFragment">
+
+    <!--标题-->
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/coloer_wither"
+        android:paddingTop="50px"
+        android:paddingBottom="50px"
+        android:paddingLeft="30px"
+        android:paddingRight="30px"
+        >
+
+        <ImageView
+            android:id="@+id/iv_balance_back"
+            android:layout_width="80px"
+            android:layout_height="80px"
+            android:textColor="@color/color_black"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/back"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="70px"
+            android:textColor="@color/color_green"
+            android:layout_centerInParent="true"
+            android:text="结算订单"
+            />
+
+
+
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#EEEEEE"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#EEEEEE"
+        android:layout_weight="1"
+        android:scrollbars="none">
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <!--地址-->
+            <com.zhy.autolayout.AutoLinearLayout
+                android:id="@+id/all_balance_address_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/coloer_wither"
+                android:clickable="true"
+                android:padding="30px"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="100px"
+                    android:layout_height="100px"
+                    android:src="@drawable/address_icon"/>
+
+                <com.zhy.autolayout.AutoLinearLayout
+                    android:id="@+id/all_balance_hasaddress"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingLeft="30px"
+                    android:paddingRight="30px"
+                    android:visibility="gone"
+                    android:orientation="vertical">
+
+                    <com.zhy.autolayout.AutoLinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tv_balance_username"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="60px"
+                            android:layout_weight="1"
+                            android:lines="1"
+                            android:gravity="left"
+                            android:ellipsize="end"
+                            android:text=""/>
+
+
+                        <TextView
+                            android:id="@+id/tv_balance_phone"
+                            android:layout_width="500px"
+                            android:layout_height="wrap_content"
+                            android:textSize="60px"
+                            android:lines="1"
+                            android:gravity="right"
+                            android:ellipsize="end"
+                            android:text=""/>
+
+
+                    </com.zhy.autolayout.AutoLinearLayout>
+
+                    <TextView
+                        android:id="@+id/tv_balance_address"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="60px"
+                        android:lines="1"
+                        android:gravity="left"
+                        android:ellipsize="end"
+                        android:text=""/>
+
+
+                </com.zhy.autolayout.AutoLinearLayout>
+
+                <!--没有地址时显示-->
+                <TextView
+                    android:id="@+id/tv_balance_nonaddress"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="60px"
+                    android:gravity="center"
+                    android:textColor="@color/color_black"
+                    android:text="请选择地址！"
+                    android:visibility="visible"/>
+
+                <ImageView
+                    android:layout_width="50px"
+                    android:layout_height="50px"
+                    android:src="@drawable/next"/>
+
+             </com.zhy.autolayout.AutoLinearLayout>
+            
+            <!--支付方式-->
+            <com.zhy.autolayout.AutoRelativeLayout
+                android:layout_marginTop="50px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FAFAFA"
+                android:padding="30px"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="60px"
+                    android:layout_alignParentLeft="true"
+                    android:textColor="@color/color_green"
+                    android:text="支付方式:"/>
+
+                <TextView
+                    android:id="@+id/tv_balance_payway"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="60px"
+                    android:layout_alignParentRight="true"
+                    android:textColor="@color/color_grey"
+                    android:text="线上支付"/>
+
+
+            </com.zhy.autolayout.AutoRelativeLayout>
+
+            <!--店铺-->
+            <com.zhy.autolayout.AutoRelativeLayout
+                android:layout_marginTop="50px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FAFAFA"
+                android:padding="30px"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_balance_shopname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="60px"
+                    android:layout_alignParentLeft="true"
+                    android:textColor="@color/color_green"
+                    android:text="..."
+                    android:drawablePadding="5px"
+                    android:gravity="center"
+                    android:layout_centerVertical="true"
+                    android:drawableRight="@drawable/next"/>
+
+
+            </com.zhy.autolayout.AutoRelativeLayout>
+
+            <!--商品-->
+            <com.zhy.autolayout.AutoRelativeLayout
+                android:layout_marginTop="1px"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#FAFAFA"
+
+                android:paddingTop="30px"
+                android:paddingBottom="30px"
+                android:paddingLeft="60px"
+                android:paddingRight="60px"
+                >
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rv_balance_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="800px"
+                    android:layout_centerVertical="true"
+                    android:layout_weight="1"
+                    android:layout_alignParentLeft="true"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_balance_quantity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="60px"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:textColor="@color/color_red"
+                    android:gravity="center"
+                    android:clickable="true"
+                    android:drawableRight="@drawable/next"
+                    android:drawablePadding="5px"
+                    android:text="共1件"/>
+
+
+            </com.zhy.autolayout.AutoRelativeLayout>
+
+
+
+            <!--配送方式-->
+            <com.zhy.autolayout.AutoRelativeLayout
+                android:layout_marginTop="1px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FAFAFA"
+                android:padding="30px"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="60px"
+                    android:layout_alignParentLeft="true"
+                    android:textColor="@color/color_green"
+                    android:text="配送方式 : 快递配送"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="60px"
+                    android:layout_toLeftOf="@+id/tv_balance_nouse"
+                    android:textColor="@color/color_grey"
+                    android:text="优惠券 : "/>
+
+                <TextView
+                    android:id="@+id/tv_balance_nouse"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="60px"
+                    android:layout_alignParentRight="true"
+                    android:textColor="@color/color_red"
+                    android:text="不使用"/>
+
+
+            </com.zhy.autolayout.AutoRelativeLayout>
+
+            <!--买家留言-->
+            <com.zhy.autolayout.AutoLinearLayout
+                android:layout_marginTop="1px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FAFAFA"
+                android:orientation="horizontal"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:padding="30px"
+                >
+
+                <TextView
+                    android:id="@+id/tv_balance_leave_words"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="60px"
+                    android:textColor="@color/color_green"
+                    android:text="买家留言 :"/>
+
+                <EditText
+                    android:id="@+id/et_balance_leave_words"
+                    android:layout_marginLeft="50px"
+                    android:layout_marginRight="50px"
+                    android:paddingTop="20px"
+                    android:paddingBottom="20px"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="60px"
+                    android:hint="选填:内容已经和商家达成一致"
+                    android:textColorHint="@color/coloer_wither"
+                    android:gravity="center"
+                    android:background="@drawable/shape_grey"
+                    android:inputType="text"
+                    android:textColor="@color/color_black"
+                    android:text=""/>
+
+
+
+
+            </com.zhy.autolayout.AutoLinearLayout>
+
+            <!--优惠促销-->
+            <com.zhy.autolayout.AutoRelativeLayout
+                android:layout_marginTop="1px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FAFAFA"
+                android:padding="30px"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="60px"
+                    android:layout_alignParentLeft="true"
+                    android:textColor="@color/color_red"
+                    android:text="*优惠促销可在购物车中更换"/>
+
+
+
+            </com.zhy.autolayout.AutoRelativeLayout>
+
+            <!--价格-->
+            <com.zhy.autolayout.AutoLinearLayout
+                android:layout_marginTop="1px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FAFAFA"
+                android:orientation="vertical"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:padding="30px"
+                >
+
+                <com.zhy.autolayout.AutoRelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="60px"
+                        android:layout_toLeftOf="@+id/tv_balance_tickets"
+                        android:layout_marginRight="100px"
+                        android:textColor="@color/color_red"
+                        android:text="彩票合计 :"/>
+
+                    <TextView
+                        android:id="@+id/tv_balance_tickets"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="60px"
+                        android:layout_alignParentRight="true"
+                        android:textColor="@color/color_grey"
+                        android:text="¥ "/>
+
+
+                </com.zhy.autolayout.AutoRelativeLayout>
+
+                <com.zhy.autolayout.AutoRelativeLayout
+                    android:layout_marginTop="30px"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="60px"
+                        android:layout_toLeftOf="@+id/tv_balance_derate"
+                        android:layout_marginRight="100px"
+                        android:textColor="@color/color_grey"
+                        android:text="减免 :"/>
+
+                    <TextView
+                        android:id="@+id/tv_balance_derate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="60px"
+                        android:layout_alignParentRight="true"
+                        android:textColor="@color/color_grey"
+                        android:text="¥ 0.00"/>
+
+
+                </com.zhy.autolayout.AutoRelativeLayout>
+
+                <com.zhy.autolayout.AutoRelativeLayout
+                    android:layout_marginTop="30px"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="60px"
+                        android:layout_toLeftOf="@+id/tv_balance_fare"
+                        android:layout_marginRight="100px"
+                        android:textColor="@color/color_grey"
+                        android:text="运费 :"/>
+
+                    <TextView
+                        android:id="@+id/tv_balance_fare"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="60px"
+                        android:layout_alignParentRight="true"
+                        android:textColor="@color/color_grey"
+                        android:text="¥ 0.00"/>
+
+
+                </com.zhy.autolayout.AutoRelativeLayout>
+
+
+
+
+
+            </com.zhy.autolayout.AutoLinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="#EEEEEE"/>
+
+
+        </com.zhy.autolayout.AutoLinearLayout>
+
+    </ScrollView>
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="200px">
+
+
+        <TextView
+            android:id="@+id/tv_balance_total"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30px"
+            android:layout_centerVertical="true"
+            android:textColor="@color/color_green"
+            android:textSize="60px"
+            android:text="合计:"/>
+
+        <TextView
+            android:layout_marginLeft="20px"
+            android:id="@+id/tv_balance_total_tickets"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/tv_balance_total"
+            android:layout_centerVertical="true"
+            android:textColor="@color/color_black"
+            android:textSize="65px"
+            android:text="彩票"/>
+
+
+
+        <Button
+            android:id="@+id/btn_balance_balance"
+            android:layout_width="600px"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:text="结算"
+            android:textSize="60px"
+            android:visibility="visible"
+            android:textColor="@color/coloer_wither"
+            android:gravity="center"
+            android:background="@color/color_green"/>
+
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+
+</com.zhy.autolayout.AutoLinearLayout>

@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:banner="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context="com.qy.zgz.mall.page.index_function.IndexFuncitonActivity">
+
+    <com.qy.zgz.mall.widget.MyVideoView
+        android:id="@+id/mvv_index_function_videoView"
+        android:layout_width="match_parent"
+        android:layout_height="910px"
+        />
+
+    <!--<com.youth.banner.Banner-->
+        <!--android:id="@+id/ban_index_function_banner"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="710px"-->
+        <!--android:visibility="gone"-->
+        <!--banner:image_scale_type="fit_xy"-->
+        <!--&gt;-->
+    <!--</com.youth.banner.Banner>-->
+
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="935px"
+        android:orientation="horizontal">
+
+        <!--购币取币-->
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:id="@+id/btn_index_function_purchase"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clickable="true"
+            android:onClick="onClick"
+            android:layout_weight="1"
+            android:background="#43AD6E"
+            >
+
+
+            <ImageView
+                android:layout_marginTop="180px"
+                android:layout_width="350px"
+                android:layout_height="350px"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/icon_money"
+               />
+
+            <TextView
+                android:layout_marginTop="550px"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_centerHorizontal="true"
+                android:text="购币取币"
+                android:textColor="@color/coloer_wither"
+                android:textSize="150px"/>
+
+
+        </com.zhy.autolayout.AutoRelativeLayout>
+
+        
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <!--未登录-->
+            <com.zhy.autolayout.AutoRelativeLayout
+                android:id="@+id/tv_index_function_member_center"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clickable="true"
+                android:onClick="onClick"
+                android:layout_weight="1"
+                android:background="#AD6AA9"
+                android:visibility="visible">
+
+                    <ImageView
+                        android:id="@+id/iv_index_function_member_icon"
+                        android:layout_width="280px"
+                        android:layout_height="280px"
+                        android:layout_marginLeft="100px"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/icon_member"
+                        />
+
+                    <TextView
+                        android:layout_marginLeft="10px"
+                        android:layout_toRightOf="@+id/iv_index_function_member_icon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:gravity="center"
+                        android:text="会员中心"
+                        android:lines="1"
+                        android:textColor="@color/coloer_wither"
+                        android:textSize="150px"/>
+
+
+            </com.zhy.autolayout.AutoRelativeLayout>
+
+            <!--登录-->
+            <com.zhy.autolayout.AutoRelativeLayout
+                android:id="@+id/arl_index_function_member_center"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:onClick="onClick"
+                android:orientation="vertical"
+                android:background="#D396A0"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/tv_index_function_username"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="会员在线 !"
+                    android:gravity="center"
+                    android:lines="1"
+                    android:ellipsize="end"
+                    android:visibility="visible"
+                    android:layout_marginTop="100px"
+                    android:layout_centerHorizontal="true"
+                    android:textStyle="bold"
+                    android:textColor="@color/coloer_wither"
+                    android:textSize="100px"/>
+
+
+                <Button
+                    android:id="@+id/btn_index_function_exitlogin"
+                    android:layout_width="506px"
+                    android:layout_height="100px"
+                    android:layout_marginTop="300px"
+                    android:layout_centerHorizontal="true"
+                    android:text="退出登录"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:onClick="onClick"
+                    android:visibility="visible"
+                    android:background="@drawable/shape_pink"
+                    android:textColor="#D396A0"
+                    android:textSize="80px"/>
+
+            </com.zhy.autolayout.AutoRelativeLayout>
+
+
+            <!--客服中心-->
+            <com.zhy.autolayout.AutoRelativeLayout
+                android:id="@+id/arl_customer_serivce"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clickable="true"
+                android:onClick="onClick"
+                android:layout_weight="1"
+                android:background="#519ACD"
+                >
+
+
+                    <ImageView
+                        android:id="@+id/iv_index_function_custserice_icon"
+                        android:layout_marginLeft="100px"
+                        android:layout_width="280px"
+                        android:layout_height="280px"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/icon_customer_service"
+                        />
+
+                    <TextView
+                        android:layout_marginLeft="10px"
+                        android:layout_toRightOf="@+id/iv_index_function_custserice_icon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:layout_centerVertical="true"
+                        android:text="客服中心"
+                        android:lines="1"
+                        android:textColor="@color/coloer_wither"
+                        android:textSize="150px"/>
+
+
+            </com.zhy.autolayout.AutoRelativeLayout>
+            
+        </com.zhy.autolayout.AutoLinearLayout>
+
+
+
+
+
+    </com.zhy.autolayout.AutoLinearLayout>
+
+        <ImageView
+            android:id="@+id/btn_index_function_shopping"
+            android:layout_width="match_parent"
+            android:layout_height="935px"
+            android:clickable="true"
+            android:onClick="onClick"
+            android:background="@drawable/exchange_shop"
+            />
+
+
+
+
+    <!--向导图片-->
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/coloer_wither">
+
+
+
+    <ImageView
+        android:id="@+id/iv_index_function_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/bg_index_thc"
+        android:clickable="true"
+        android:onClick="onClick"
+        android:visibility="gone"
+        android:scaleType="fitXY"/>
+
+        <!--其他商铺显示-->
+        <ImageView
+            android:id="@+id/arl_game_zzp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/bg_index_function_zzp"
+            android:clickable="true"
+            android:onClick="onClick"
+            android:visibility="visible"
+            android:scaleType="fitXY"/>
+
+        <!--GIF-->
+        <ImageView
+            android:id="@+id/sdv_index_function_zzpgif"
+            android:layout_width="800px"
+            android:layout_height="800px"
+            android:layout_marginTop="150px"
+            android:layout_marginLeft="50px"
+            android:visibility="gone"/>
+
+        <!--二维码显示-->
+        <ImageView
+            android:id="@+id/iv_index_function_qrcode"
+            android:layout_width="400px"
+            android:layout_height="400px"
+            android:layout_marginRight="90px"
+            android:layout_marginTop="290px"
+            android:layout_alignParentRight="true"
+            android:visibility="gone"
+            />
+
+        <!--设置域名-->
+        <View
+            android:id="@+id/v_index_function_sethost"
+            android:layout_width="100px"
+            android:layout_height="100px"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentBottom="true"
+            android:clickable="true"
+            android:longClickable="true"
+            android:visibility="gone"
+            android:background="@color/transparent"
+            />
+
+        <TextView
+            android:id="@+id/tv_index_function_shopname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:lines="1"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:clickable="true"
+            android:longClickable="true"
+            android:textSize="45px"
+            />
+
+
+        <TextView
+            android:id="@+id/tv_index_function_version"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:lines="1"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:textSize="45px"
+            />
+
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+</com.zhy.autolayout.AutoLinearLayout>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="primary">#FEE000</color>
+    <color name="primary_dark">#FEE000</color>
+    <color name="witer">#60FFFFFF</color>
+    <color name="colore_red">#FEE000</color>
+    <color name="coloer_wither">#FFFFFF</color>
+    <color name="color_black">#FF000000</color>
+    <color name="color_grey">#FF666666</color>
+    <color name="color_999999">#FF999999</color>
+    <color name="color_red">#ff0505</color>
+    <color name="transparent">#00000000</color>
+    <color name="font_black">#333333</color>
+    <color name="color_green">#00AAA3</color>
+    <color name="color_blue">#3399FF</color>
+    <color name="color_lightblue">#CEEDF7</color>
+
+    <!-- add by xie 2018-08-03 -->
+    <color name="color_white">#ffffff</color>
+    <color name="color_main_page_bottom">#00AAA3</color>
+    <color name="color_orange">#F49C1A</color>
+    <color name="color_btn_login">#F7A545</color>
+    <color name="color_font">#4C4C4B</color>
+    <color name="color_coin_bg">#DCDDDD</color>
+
+    <color name="button_red">#ff2a2a</color>
+
+    <color name="textblue">#3cb8ff</color>
+
+    <color name="circleblue">#3cb8ff</color>
+
+</resources>

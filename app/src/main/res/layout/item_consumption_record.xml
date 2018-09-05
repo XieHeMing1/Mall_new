@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200px"
+        android:orientation="horizontal"
+        android:paddingBottom="50px"
+        android:paddingTop="50px">
+
+        <TextView
+            android:id="@+id/tv_purchase_record_date"
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:lines="3"
+            android:text=""
+            android:textSize="46px" />
+
+        <TextView
+            android:id="@+id/tv_purchase_record_type"
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:lines="2"
+            android:text=""
+            android:textSize="46px" />
+
+        <TextView
+            android:id="@+id/tv_purchase_record_price"
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:lines="2"
+            android:textSize="46px" />
+
+        <TextView
+            android:id="@+id/tv_purchase_record_coins"
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:lines="1"
+            android:textSize="46px" />
+
+        <TextView
+            android:id="@+id/tv_purchase_record_recoins"
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:lines="2"
+            android:textSize="46px" />
+
+        <TextView
+            android:id="@+id/tv_purchase_record_deposit"
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:lines="2"
+            android:textSize="46px" />
+
+        <TextView
+            android:id="@+id/tv_purchase_record_ticket"
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:lines="2"
+            android:text=""
+            android:textSize="46px" />
+
+        <TextView
+            android:id="@+id/tv_purchase_record_point"
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:lines="2"
+            android:textSize="46px" />
+
+    </com.zhy.autolayout.AutoLinearLayout>
+
+
+</com.zhy.autolayout.AutoLinearLayout>

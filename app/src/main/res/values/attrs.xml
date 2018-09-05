@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--IRecyclerView-->
+    <declare-styleable name="IRecyclerView">
+        <attr name="refreshHeaderLayout" format="reference" />  <!--refresh header layout res id-->
+        <attr name="loadMoreFooterLayout" format="reference" /> <!--loadmore fotter layout res id-->
+        <attr name="refreshEnabled" format="boolean" />
+        <attr name="loadMoreEnabled" format="boolean" />
+        <attr name="refreshFinalMoveOffset" format="dimension" />   <!--refresh header max move distance-->
+    </declare-styleable>
+
+
+    <declare-styleable name="CircleTextProgressbar">
+        <attr name="in_circle_color" format="color" />
+    </declare-styleable>
+
+</resources>

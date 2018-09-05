@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+    
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="400px"
+        android:gravity="center_horizontal"
+        android:background="@drawable/bg_item_takecoin_round"
+        android:layout_marginTop="50px"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/item_take_coins_coin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="150px"
+            android:textSize="120px"
+            android:text=""
+            android:textStyle="bold"
+            android:textColor="#00AAEE"
+            android:lines="1"
+            android:ellipsize="end"/>
+
+    </com.zhy.autolayout.AutoLinearLayout>
+
+
+</com.zhy.autolayout.AutoLinearLayout>

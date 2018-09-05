@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/transparent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:layout_width="1600px"
+        android:layout_height="800px"
+        android:background="@drawable/bg_dialog_tis"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_dialog_game_exit_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="150px"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:maxLines="2"
+            android:paddingLeft="20px"
+            android:paddingRight="20px"
+            android:text="是否退出?"
+            android:textColor="@color/color_black"
+            android:textSize="100px"
+            android:textStyle="bold" />
+
+
+        <ImageView
+            android:id="@+id/iv_dialog_game_exit_log"
+            android:layout_width="150px"
+            android:layout_height="150px"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20px"
+            android:layout_marginTop="20px"
+            android:clickable="true"
+            android:src="@drawable/x" />
+
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:id="@+id/all_dialog_game_exit_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="150px">
+
+            <Button
+                android:id="@+id/btn_dialog_game_exit_no"
+                android:layout_width="300px"
+                android:layout_height="120px"
+                android:layout_marginRight="100px"
+                android:background="@drawable/shape_green"
+                android:gravity="center"
+                android:text="退出页面"
+                android:textColor="@color/coloer_wither"
+                android:textSize="60px" />
+
+            <Button
+                android:id="@+id/btn_dialog_game_exit_yes"
+                android:layout_width="300px"
+                android:layout_height="120px"
+                android:layout_marginLeft="100px"
+                android:background="@drawable/shape_green"
+                android:gravity="center"
+                android:text="退出账号"
+                android:textColor="@color/coloer_wither"
+                android:textSize="60px" />
+
+
+        </com.zhy.autolayout.AutoLinearLayout>
+
+
+        <TextView
+            android:id="@+id/tv_dialog_game_exit_countdown"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50px"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text=""
+            android:textColor="@color/color_black"
+            android:textSize="70px" />
+
+
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+</com.zhy.autolayout.AutoLinearLayout>

@@ -1,0 +1,58 @@
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_white"
+    android:orientation="vertical"
+    tools:context="com.qy.zgz.mall.page.fragment.MemberCenterFragment">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="150px"
+        android:ellipsize="end"
+        android:lines="1"
+        android:text="未登录"
+        android:textColor="@color/color_red"
+        android:textSize="120px"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="100px"
+        android:ellipsize="end"
+        android:lines="1"
+        android:text="请选择一种登录方式登录会员"
+        android:textColor="@color/color_black"
+        android:textSize="80px"
+        android:textStyle="bold" />
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="100px"
+        android:background="@drawable/ic_login_guide">
+
+        <ImageView
+            android:id="@+id/iv_menber_center_qrcode"
+            android:layout_width="600px"
+            android:layout_height="600px"
+            android:layout_marginLeft="1425px"
+            android:layout_marginTop="400px" />
+
+
+        <ImageView
+            android:id="@+id/iv_menber_center_refresh_qrcode"
+            android:layout_width="600px"
+            android:layout_height="100px"
+            android:layout_marginLeft="1425px"
+            android:layout_marginTop="1000px"
+            android:clickable="true"
+            android:src="@drawable/refresh" />
+
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+</com.zhy.autolayout.AutoLinearLayout>

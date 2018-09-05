@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="1650px"
+    android:layout_height="2400px"
+    android:background="@drawable/bg_dialog_game_win">
+
+    <TextView
+        android:layout_width="850px"
+        android:layout_height="380px"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="690px"
+        android:background="@drawable/bg_dialog_game_quan"
+        android:gravity="center"
+        android:lines="1"
+        android:text="免费领取"
+        android:textColor="#FFFFFF"
+        android:textSize="120px"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_dialog_game_prize_index"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="第1个柜子正在开门..."
+        android:textColor="#FFFFFF"
+        android:textSize="90px"
+        android:textStyle="bold" />
+
+
+    <TextView
+        android:id="@+id/tv_dialog_game_prize_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_dialog_game_prize_index"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100px"
+        android:lines="1"
+        android:maxWidth="1200px"
+        android:text=""
+        android:textColor="#FFFFFF"
+        android:textSize="70px"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/tv_dialog_game_prize_img"
+        android:layout_width="550px"
+        android:layout_height="550px"
+        android:layout_below="@+id/tv_dialog_game_prize_name"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50px"
+        android:background="@drawable/bg_dialog_game_git"
+        android:padding="50px"
+        android:src="@color/color_white" />
+
+</com.zhy.autolayout.AutoRelativeLayout>

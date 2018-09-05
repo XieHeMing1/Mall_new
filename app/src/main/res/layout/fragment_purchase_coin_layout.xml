@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!-- 提币购币界面 -->
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_coin_type"
+        android:layout_width="match_parent"
+        android:layout_height="2100px"
+        android:layout_marginLeft="30px"
+        android:layout_marginRight="30px"
+        android:visibility="visible">
+
+    </android.support.v7.widget.RecyclerView>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_fg_take_coins_info"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="30px"
+        android:layout_marginRight="30px"
+        android:layout_height="2100px"
+        android:background="@color/transparent"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/tv_fg_buy_coins_notaocan_tis"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="此等级没有套餐，请联系前台!"
+        android:textColor="@color/color_black"
+        android:textSize="80px"
+        android:visibility="gone" />
+</com.zhy.autolayout.AutoLinearLayout>

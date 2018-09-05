@@ -1,0 +1,790 @@
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:orientation="vertical"
+             tools:context="com.qy.zgz.mall.page.fragment.MenberCenterLoginingFragment">
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="50px"
+        android:paddingBottom="50px"
+        android:paddingLeft="30px"
+        android:paddingRight="30px"
+        >
+
+        <TextView
+            android:id="@+id/tv_menber_center_login_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="60px"
+            android:clickable="true"
+            android:textColor="@color/color_black"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:text="返回"
+            android:drawableLeft="@drawable/back"
+            android:drawablePadding="5px"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="70px"
+            android:textColor="#00AAA3"
+            android:layout_centerInParent="true"
+            android:text="会员中心"
+            />
+
+
+
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/color_grey"/>
+
+    <!--会员信息-->
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:paddingTop="50px"
+        android:paddingBottom="50px"
+        android:paddingLeft="100px"
+        android:paddingRight="100px"
+        android:orientation="vertical"
+        >
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="100px"
+                android:layout_height="100px"
+                android:src="@drawable/user_name"/>
+
+            <TextView
+                android:id="@+id/tv_menber_center_login_username"
+                android:layout_marginLeft="10px"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="60px"
+                android:gravity="center"
+                android:lines="1"
+                android:ellipsize="end"
+                android:textColor="@color/color_grey"
+                android:layout_centerVertical="true"
+                android:text="会员名称 : "
+
+                />
+        </com.zhy.autolayout.AutoLinearLayout>
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_marginTop="50px"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="100px"
+                android:layout_height="100px"
+                android:src="@drawable/user_no"/>
+
+            <TextView
+                android:id="@+id/tv_menber_center_login_userno"
+                android:layout_marginLeft="10px"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="60px"
+                android:gravity="center"
+                android:lines="1"
+                android:ellipsize="end"
+                android:textColor="@color/color_grey"
+                android:layout_centerVertical="true"
+                android:text="会员编号 : "
+
+                />
+        </com.zhy.autolayout.AutoLinearLayout>
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_marginTop="50px"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="100px"
+                android:layout_height="100px"
+                android:src="@drawable/user_lv"/>
+
+            <TextView
+                android:id="@+id/tv_menber_center_login_userlevel"
+                android:layout_marginLeft="10px"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="60px"
+                android:lines="1"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:textColor="@color/color_grey"
+                android:layout_centerVertical="true"
+                android:text="会员等级 : "
+
+                />
+        </com.zhy.autolayout.AutoLinearLayout>
+
+
+
+
+
+    </com.zhy.autolayout.AutoLinearLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/color_grey"/>
+
+    <!--我的资产-->
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="50px"
+            android:paddingBottom="50px"
+            android:paddingLeft="30px"
+            android:paddingRight="30px"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="80px"
+                android:layout_height="80px"
+                android:src="@drawable/my_asset"/>
+
+            <TextView
+                android:layout_marginLeft="20px"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="60px"
+                android:gravity="center"
+                android:lines="1"
+                android:ellipsize="end"
+                android:textColor="@color/color_black"
+                android:layout_centerVertical="true"
+                android:text="我的资产"
+
+                />
+        </com.zhy.autolayout.AutoLinearLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/color_grey"/>
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:paddingLeft="100px"
+            android:paddingRight="100px"
+            android:paddingTop="40px"
+            android:paddingBottom="40px"
+            android:orientation="horizontal">
+
+            <com.zhy.autolayout.AutoRelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:layout_alignParentLeft="true"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="150px"
+                    android:layout_height="150px"
+                    android:layout_marginRight="20px"
+                    android:src="@drawable/icon_ticket"/>
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="60px"
+                    android:gravity="center"
+                    android:lines="1"
+                    android:ellipsize="end"
+                    android:textColor="@color/color_black"
+                    android:layout_centerVertical="true"
+                    android:text="彩票"
+
+                    />
+
+                <TextView
+                    android:id="@+id/tv_menber_center_login_tickets"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="60px"
+                    android:gravity="center"
+                    android:lines="1"
+                    android:ellipsize="end"
+                    android:textColor="@color/color_red"
+                    android:layout_centerVertical="true"
+                    android:text=""
+
+                    />
+
+            </com.zhy.autolayout.AutoLinearLayout>
+
+            </com.zhy.autolayout.AutoLinearLayout>
+
+            </com.zhy.autolayout.AutoRelativeLayout>
+
+            <com.zhy.autolayout.AutoRelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+            <com.zhy.autolayout.AutoLinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:layout_alignParentLeft="true"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="150px"
+                    android:layout_height="150px"
+                    android:layout_marginRight="20px"
+                    android:src="@drawable/icon_coins"/>
+            <com.zhy.autolayout.AutoLinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="60px"
+                    android:gravity="center"
+                    android:lines="1"
+                    android:ellipsize="end"
+                    android:textColor="@color/color_black"
+                    android:layout_centerVertical="true"
+                    android:text="游戏币"
+
+                    />
+
+                <TextView
+                    android:id="@+id/tv_menber_center_login_coins"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="60px"
+                    android:gravity="center"
+                    android:lines="1"
+                    android:ellipsize="end"
+                    android:textColor="@color/color_red"
+                    android:layout_centerVertical="true"
+                    android:text=""
+
+                    />
+
+            </com.zhy.autolayout.AutoLinearLayout>
+
+            </com.zhy.autolayout.AutoLinearLayout>
+
+            </com.zhy.autolayout.AutoRelativeLayout>
+
+            <com.zhy.autolayout.AutoRelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+            <com.zhy.autolayout.AutoLinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:layout_alignParentLeft="true"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="150px"
+                    android:layout_height="150px"
+                    android:layout_marginRight="20px"
+                    android:src="@drawable/icon_point"/>
+            <com.zhy.autolayout.AutoLinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="60px"
+                    android:gravity="center"
+                    android:lines="1"
+                    android:ellipsize="end"
+                    android:textColor="@color/color_black"
+                    android:layout_centerVertical="true"
+                    android:text="积分数"
+
+                    />
+
+                <TextView
+                    android:id="@+id/tv_menber_center_login_point"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="60px"
+                    android:gravity="center"
+                    android:lines="1"
+                    android:ellipsize="end"
+                    android:textColor="@color/color_red"
+                    android:layout_centerVertical="true"
+                    android:text=""
+
+                    />
+
+            </com.zhy.autolayout.AutoLinearLayout>
+
+            </com.zhy.autolayout.AutoLinearLayout>
+
+            </com.zhy.autolayout.AutoRelativeLayout>
+
+
+        </com.zhy.autolayout.AutoLinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/color_grey"/>
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:paddingTop="40px"
+            android:paddingBottom="40px"
+            android:paddingLeft="100px"
+            android:paddingRight="100px"
+            android:orientation="horizontal">
+
+            <com.zhy.autolayout.AutoRelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+            <com.zhy.autolayout.AutoLinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:layout_alignParentLeft="true"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="150px"
+                    android:layout_height="150px"
+                    android:layout_marginRight="20px"
+                    android:src="@drawable/icon_recoins"/>
+            <com.zhy.autolayout.AutoLinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="60px"
+                    android:gravity="center"
+                    android:lines="1"
+                    android:ellipsize="end"
+                    android:textColor="@color/color_black"
+                    android:layout_centerVertical="true"
+                    android:text="代币数"
+
+                    />
+
+                <TextView
+                    android:id="@+id/tv_menber_center_login_recoin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="60px"
+                    android:gravity="center"
+                    android:lines="1"
+                    android:ellipsize="end"
+                    android:textColor="@color/color_red"
+                    android:layout_centerVertical="true"
+                    android:text=""
+
+                    />
+
+            </com.zhy.autolayout.AutoLinearLayout>
+
+            </com.zhy.autolayout.AutoLinearLayout>
+
+            </com.zhy.autolayout.AutoRelativeLayout>
+
+            <com.zhy.autolayout.AutoRelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+               android:layout_alignParentLeft="true"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="150px"
+                    android:layout_height="150px"
+                    android:layout_marginRight="20px"
+                    android:src="@drawable/icon_deposit"/>
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="60px"
+                    android:gravity="center"
+                    android:lines="1"
+                    android:ellipsize="end"
+                    android:textColor="@color/color_black"
+                    android:layout_centerVertical="true"
+                    android:text="预存款"
+
+                    />
+
+                <TextView
+                    android:id="@+id/tv_menber_center_login_deposit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="60px"
+                    android:gravity="center"
+                    android:lines="1"
+                    android:ellipsize="end"
+                    android:textColor="@color/color_red"
+                    android:layout_centerVertical="true"
+                    android:text=""
+
+                    />
+
+            </com.zhy.autolayout.AutoLinearLayout>
+
+            </com.zhy.autolayout.AutoLinearLayout>
+
+            </com.zhy.autolayout.AutoRelativeLayout>
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:visibility="invisible"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="60px"
+                    android:gravity="center"
+                    android:lines="1"
+                    android:ellipsize="end"
+                    android:textColor="@color/color_black"
+                    android:layout_centerVertical="true"
+                    android:text=""
+
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="60px"
+                    android:gravity="center"
+                    android:lines="1"
+                    android:ellipsize="end"
+                    android:textColor="@color/color_red"
+                    android:layout_centerVertical="true"
+                    android:text=""
+
+                    />
+
+            </com.zhy.autolayout.AutoLinearLayout>
+
+
+        </com.zhy.autolayout.AutoLinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/color_grey"/>
+
+
+
+
+    </com.zhy.autolayout.AutoLinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/color_grey"/>
+
+    <!--我的订单-->
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="50px"
+            android:paddingBottom="50px"
+            android:paddingLeft="30px"
+            android:paddingRight="30px"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="80px"
+                android:layout_height="80px"
+                android:src="@drawable/my_order"/>
+
+            <TextView
+                android:layout_marginLeft="20px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="60px"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:lines="1"
+                android:ellipsize="end"
+                android:textColor="@color/color_black"
+                android:layout_centerVertical="true"
+                android:text="我的订单"
+                />
+
+            <TextView
+                android:id="@+id/tv_menber_center_login_findallorder"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="60px"
+                android:gravity="center"
+                android:clickable="true"
+                android:lines="1"
+                android:ellipsize="end"
+                android:textColor="@color/color_black"
+                android:layout_centerVertical="true"
+                android:text="查看全部订单"
+                android:drawableRight="@drawable/next"
+                android:drawablePadding="5px"
+                />
+
+        </com.zhy.autolayout.AutoLinearLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/color_grey"/>
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:paddingTop="50px"
+            android:orientation="horizontal">
+
+            <com.zhy.autolayout.AutoRelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <com.zhy.autolayout.AutoLinearLayout
+                    android:id="@+id/all_menber_center_login_unpay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:clickable="true"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="100px"
+                        android:layout_height="100px"
+                        android:src="@drawable/my_order01"
+                        />
+
+                <TextView
+                    android:id="@+id/tv_menber_center_login_unpay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="60px"
+                    android:gravity="center"
+                    android:lines="1"
+                    android:ellipsize="end"
+                    android:textColor="@color/color_black"
+                    android:layout_centerVertical="true"
+                    android:text="待付款"
+
+                    />
+
+
+                </com.zhy.autolayout.AutoLinearLayout>
+
+            </com.zhy.autolayout.AutoRelativeLayout>
+
+            <com.zhy.autolayout.AutoRelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <com.zhy.autolayout.AutoLinearLayout
+                    android:id="@+id/all_menber_center_login_unsend"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:clickable="true"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="100px"
+                        android:layout_height="100px"
+                        android:src="@drawable/my_order02"
+                        />
+
+                    <TextView
+                        android:id="@+id/tv_menber_center_login_unsend"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="60px"
+                        android:gravity="center"
+                        android:lines="1"
+                        android:ellipsize="end"
+                        android:textColor="@color/color_black"
+                        android:layout_centerVertical="true"
+                        android:text="待发货"
+
+                        />
+
+
+                </com.zhy.autolayout.AutoLinearLayout>
+
+            </com.zhy.autolayout.AutoRelativeLayout>
+
+            <com.zhy.autolayout.AutoRelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <com.zhy.autolayout.AutoLinearLayout
+                    android:id="@+id/all_menber_center_login_unreceive"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:clickable="true"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="100px"
+                        android:layout_height="100px"
+                        android:src="@drawable/my_order03"
+                        />
+
+                    <TextView
+                        android:id="@+id/tv_menber_center_login_unreceive"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="60px"
+                        android:gravity="center"
+                        android:lines="1"
+                        android:ellipsize="end"
+                        android:textColor="@color/color_black"
+                        android:layout_centerVertical="true"
+                        android:text="待收货"
+
+                        />
+
+
+                </com.zhy.autolayout.AutoLinearLayout>
+
+            </com.zhy.autolayout.AutoRelativeLayout>
+
+            <com.zhy.autolayout.AutoRelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <com.zhy.autolayout.AutoLinearLayout
+                    android:id="@+id/all_menber_center_login_unassess"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:clickable="true"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="100px"
+                        android:layout_height="100px"
+                        android:src="@drawable/my_order04"
+                        />
+
+                    <TextView
+                        android:id="@+id/tv_menber_center_login_unassess"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="60px"
+                        android:gravity="center"
+                        android:lines="1"
+                        android:ellipsize="end"
+                        android:textColor="@color/color_black"
+                        android:layout_centerVertical="true"
+                        android:text="待评价"
+
+                        />
+
+
+                </com.zhy.autolayout.AutoLinearLayout>
+
+            </com.zhy.autolayout.AutoRelativeLayout>
+
+
+        </com.zhy.autolayout.AutoLinearLayout>
+
+
+
+
+    </com.zhy.autolayout.AutoLinearLayout>
+
+
+
+
+</com.zhy.autolayout.AutoLinearLayout>

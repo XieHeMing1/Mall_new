@@ -1,0 +1,152 @@
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:orientation="vertical"
+             tools:context="com.qy.zgz.mall.page.fragment.ShopCarFragment">
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="150px"
+        android:paddingLeft="60px"
+        android:paddingRight="40px"
+       >
+
+        <ImageView
+            android:id="@+id/iv_shop_car_back"
+            android:layout_width="80px"
+            android:layout_height="80px"
+            android:textColor="@color/color_black"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/back"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="70px"
+            android:textColor="@color/color_green"
+            android:layout_centerInParent="true"
+            android:text="购物车"
+            />
+
+
+        <TextView
+            android:id="@+id/tv_shop_car_update"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="60px"
+            android:clickable="true"
+            android:textColor="@color/color_black"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="编辑"
+            />
+
+
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/color_grey"/>
+
+    <TextView
+        android:id="@+id/tv_shop_car_shopname"
+        android:layout_width="wrap_content"
+        android:layout_height="150px"
+        android:layout_marginLeft="60px"
+        android:textSize="60px"
+        android:gravity="center"
+        android:textColor="@color/color_green"
+        android:text="..."
+        android:drawablePadding="5px"
+        android:drawableRight="@drawable/next"
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/color_grey"/>
+
+    <!-- height约等于2226-->
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_shop_car_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+    </android.support.v7.widget.RecyclerView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/color_grey"/>
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="200px">
+
+        <ImageView
+            android:id="@+id/iv_shop_car_allsel"
+            android:layout_marginLeft="60px"
+            android:layout_width="128px"
+            android:layout_height="128px"
+            android:clickable="true"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/select_grey"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10px"
+            android:layout_toRightOf="@id/iv_shop_car_allsel"
+            android:layout_centerVertical="true"
+            android:textColor="@color/color_green"
+            android:textSize="60px"
+            android:text="全选"/>
+
+        <TextView
+            android:id="@+id/tv_shop_car_total"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="650px"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:textColor="@color/color_red"
+            android:textSize="65px"
+            android:text="合计:0.00彩票"/>
+
+
+        <TextView
+            android:id="@+id/tv_shop_car_del"
+            android:layout_width="600px"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/color_grey"
+            android:clickable="true"
+            android:textSize="60px"
+            android:gravity="center"
+            android:visibility="gone"
+            android:text="删除"/>
+
+        <Button
+            android:id="@+id/btn_shop_car_balance"
+            android:layout_width="600px"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:text="结算"
+            android:textSize="60px"
+            android:visibility="visible"
+            android:textColor="@color/coloer_wither"
+            android:gravity="center"
+            android:background="@color/color_green"/>
+
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+</com.zhy.autolayout.AutoLinearLayout>
